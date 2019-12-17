@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "Dolly Pro";
+  src: url("fonts/Dolly.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+  unicode-range: U+0000-DFFF, U+F900-FFFD;
+}
+@font-face {
+  font-family: "Dolly Pro";
+  src: url("fonts/Dolly-Italic.woff") format("woff");
+  font-style: italic;
+  font-weight: normal;
+  unicode-range: U+0000-DFFF, U+F900-FFFD;
+}
+@font-face {
+  font-family: "Dolly Pro";
+  src: url("fonts/Dolly-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+  unicode-range: U+0000-DFFF, U+F900-FFFD;
+}
