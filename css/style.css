@@ -1,26 +1,19 @@
-/*
-Template Name: Resumex
-Description: HTML5 / CSS3 One Page
-Version: 1.0
-Author: themehippo.com
-*/
-
-body {
-    font-family : 'Maison Neue', sans-serif;
-    font-size   : 15px;
-    line-height : 1.8em;
-    color       : #3d3d50;
-    font-weight : 300;
-    /*background  : url("../img/pattern-bg.png") fixed;*/
-    }
 
 /* --------------------------------------
  * Global Typography
  *------------------------------------------*/
 
+body {
+    font-family : 'Maison Neue', sans-serif;
+    font-size   : 15px;
+    line-height : 1.8em;
+    color       : #212529;
+    font-weight : 400;
+    }
+
 h1, h2, h3, h4, h5, h6 {
     margin : 0 0 15px;
-    color  : #2b2b3d;
+    color  : #212529;
     }
 
 h1 {
@@ -44,13 +37,13 @@ h3 {
 h4 {
     font-size   : 15px;
     line-height : 1.8em;
-    font-weight : 500;
+    font-weight : 400;
     }
 
 h5 {
     font-size   : 15px;
     line-height : 1.5em;
-    font-weight : 500;
+    font-weight : 400;
     }
 
 h6 {
@@ -81,7 +74,6 @@ a:active {
 a:hover,
 a:focus {
     text-decoration : none;
-    color           : #ff9800;
     }
 
 p {
@@ -91,58 +83,7 @@ p {
 ul {
     margin     : 0;
     padding    : 0;
-    list-style : none;
-    }
-
-/*------------------
- * Button Style
- *------------------*/
-.btn {
-    padding        : 14px 30px 11px;
-    margin-bottom  : 0;
-    font-size      : 14px;
-    font-weight    : 500;
-    border-radius  : 0;
-    border         : 0;
-    text-transform : uppercase;
-    }
-
-.btn-lg {
-    font-weight : 700;
-    font-size   : 24px;
-    padding     : 15px 30px;
-    }
-
-/*btn-primary*/
-.btn-primary {
-    background-color : #5469d4;
-    }
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active:focus {
-    background : #ff9800;
-    }
-
-/*btn-default*/
-.btn-default {
-    color            : #2a54f5;
-    background-color : transparent;
-    border           : 2px solid #2a54f5;
-    }
-
-.btn-default:hover,
-.btn-default:focus,
-.btn-default:active:focus {
-    background   : #2a54f5;
-    color        : #ffffff;
-    border-color : #2a54f5;
-    }
-
-button:focus,
-.btn:focus,
-.btn:active:focus {
-    outline : none;
+    margin-left: 15px;
     }
 
 /* --------------------
@@ -165,16 +106,16 @@ button:focus,
 
 .left-col-block {
     overflow     : hidden;
-    -webkit-flex : 1 0 0;
-    flex         : 1 0 0;
+    -webkit-flex : 2 0 0;
+    flex         : 2 0 0;
     position     : relative;
     background   : rgba(255, 255, 255, .8);
     border-right : 1px solid #eaeaea;
     }
 
 .right-col-block {
-    -webkit-flex : 2 0 0;
-    flex         : 2 0 0;
+    -webkit-flex : 6 0 0;
+    flex         : 6 0 0;
     position     : relative;
     background   : #ffffff;
     }
@@ -207,20 +148,6 @@ button:focus,
         }
     }
 
-/* --------------------
- * Section Background
- * -------------------*/
-
-.gray-bg {
-    background-color : #ffffff;
-    }
-
-/* --------------------
- *  main Wrapper
- * -------------------*/
-#main-wrapper {
-    overflow : hidden;
-    }
 
 /*-------------------
  * Section Wrapper
@@ -243,11 +170,6 @@ button:focus,
     margin-bottom : 15px;
     }
 
-.section-title h2 {
-    margin-bottom : 5px;
-    color         : #bebece;
-    }
-
 /*-----------------------------
  * NAVIGATION & HEADER STYLE
  *-----------------------------*/
@@ -260,10 +182,6 @@ button:focus,
 
 .header .profile-img {
     margin-bottom : 50px;
-    }
-
-.header .content-wrapper {
-
     }
 
 .header .content {
@@ -284,10 +202,6 @@ button:focus,
     margin : 10px 0;
     }
 
-.header .btn {
-    margin-top : 40px;
-    }
-
 @media (max-width : 768px) {
     .header {
         padding       : 0;
@@ -304,100 +218,12 @@ button:focus,
         }
     }
 
-/* Header Sticky */
-
-.sticky {
-    position : -webkit-sticky;
-    position : sticky;
-    top      : 0;
-    }
-
 /*-------------------
- * Social Icon
+ * Skills
  *-------------------*/
 
-.social-icon {
-    margin  : 20px 0;
-    padding : 0;
-    display : block;
-    }
-
-.social-icon li {
-    display : inline-block;
-    margin  : 0 2px;
-    }
-
-.social-icon li a {
-    display       : block;
-    font-size     : 12px;
-    color         : #333333;
-    width         : 34px;
-    height        : 34px;
-    line-height   : 33px;
-    text-align    : center;
-    border-radius : 2px;
-    border        : 2px solid #eeeeee;
-    }
-
-.social-icon li a:hover {
-    border-color : #cccccc;
-    }
-
-/*-------------------
- * Expertise
- *-------------------*/
-.expertise-item {
-    margin-bottom : 20px;
-    }
-
-.expertise-item h3 {
+.skill-item h4 {
     margin-bottom : 5px;
-    font-weight   : 700;
-    }
-
-/*-------------------
- * Skills Progressbar
- *-------------------*/
-
-.progress-item {
-    position : relative;
-    }
-
-.progress-item .progress-title {
-    font-size     : 15px;
-    font-weight   : 400;
-    display       : inline-block;
-    margin-bottom : 5px;
-    }
-
-.progress-item .progress {
-    height        : 4px;
-    box-shadow    : none;
-    border-radius : 5px;
-    }
-
-.progress-item .progress-bar {
-    background-color : #FFC107;
-    box-shadow       : none;
-    text-align       : right;
-    }
-
-.progress-item .progress-percent {
-    font-size        : 10px;
-    background-color : #313131;
-    position         : absolute;
-    top              : 5px;
-    padding          : 0 8px;
-    border-radius    : 3px;
-    }
-
-.progress-item .progress-percent::before {
-    content      : "";
-    position     : absolute;
-    left         : 0;
-    bottom       : -4px;
-    border-top   : 6px solid #313131;
-    border-right : 8px solid transparent;
     }
 
 /*-------------------
@@ -450,111 +276,47 @@ button:focus,
  * Content Item
  *-------------------*/
 
-.content-item {
+.content-item:not(:last-child) {
     margin-bottom : 40px;
     }
 
 .content-item h3 {
     margin         : 0 0 10px;
     line-height    : 1;
-    font-weight    : bold;
-    text-transform : uppercase;
     }
 
 .content-item h4 {
     margin      : 0;
     line-height : 1;
+    margin-bottom: 20px;
     }
 
 .content-item small {
     color : #888888;
     }
 
-/*-------------------
- * Contact
- *-------------------*/
-
-.feedback-form {
-    margin-top : 50px;
+.content-item .content-subtitle {
+    margin-bottom: 0;
+    font-weight: 500;
     }
 
-/*-------------------
- * Form Style
- *-------------------*/
-.form-control {
-    height        : 50px;
-    padding       : 0 20px;
-    font-size     : 13px;
-    line-height   : 50px;
-    color         : #969595;
-    border        : 1px solid #cccccc;
-    border-radius : 0;
-    box-shadow    : none;
-    box-sizing    : border-box;
-    }
-
-.form-control:focus,
-.form-control:active {
-    box-shadow : none;
-    }
 
 /* --------------------------------------------
  *   Footer
  *---------------------------------------------- */
 
-/* Copyright */
-
 .footer {
     padding : 30px 50px;
     }
 
-.footer .copyright-section {
+.footer .copytext {
     font-size : 13px;
     color     : #888888;
-
-    }
-
-.footer .copyright-section .copytext {
     font-weight : 400;
-    display     : block;
     }
 
 @media (max-width : 480px) {
     .footer {
         padding : 10px 20px;
         }
-    }
-
-/* ---------------------------------------------- /*
- * Preloader
-/* ---------------------------------------------- */
-#preloader {
-    background : rgba(255, 255, 255,.8);
-    bottom     : 0;
-    left       : 0;
-    position   : fixed;
-    right      : 0;
-    top        : 0;
-    z-index    : 9999;
-    }
-
-#status,
-.status-mes {
-    background-image    : url(/images/preloader.svg);
-    background-position : center;
-    background-repeat   : no-repeat;
-    height              : 200px;
-    left                : 50%;
-    margin              : -100px 0 0 -100px;
-    position            : absolute;
-    top                 : 50%;
-    width               : 200px;
-    }
-
-.status-mes {
-    background : none;
-    left       : 0;
-    margin     : 0;
-    text-align : center;
-    top        : 65%;
     }
