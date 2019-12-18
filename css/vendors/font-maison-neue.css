@@ -1,11 +1,11 @@
-/*@font-face {
+@font-face {
 	font-family: 'Maison Neue';
 	src: url('/css/fonts/MaisonNeue/MaisonNeue-Light.woff2') format('woff2'),
 		url('/css/fonts/MaisonNeue/MaisonNeue-Light.woff') format('woff'),
 		url('/css/fonts/MaisonNeue/MaisonNeue-Light.ttf') format('truetype');
 	font-weight: 300;
 	font-style: normal;
-}*/
+}
 
 @font-face {
 	font-family: 'Maison Neue';

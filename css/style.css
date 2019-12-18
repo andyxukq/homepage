@@ -2,6 +2,32 @@
 /* --------------------------------------
  * Global Typography
  *------------------------------------------*/
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('/css/fonts/MaisonNeue/MaisonNeue-Book.woff2') format('woff2'),
+        url('/css/fonts/MaisonNeue/MaisonNeue-Book.woff') format('woff'),
+        url('/css/fonts/MaisonNeue/MaisonNeue-Book.ttf') format('truetype');
+    font-weight: 400; /* normal */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('/css/fonts/MaisonNeue/MaisonNeue-Medium.woff2') format('woff2'),
+        url('/css/fonts/MaisonNeue/MaisonNeue-Medium.woff') format('woff'),
+        url('/css/fonts/MaisonNeue/MaisonNeue-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Maison Neue';
+    src: url('/css/fonts/MaisonNeue/MaisonNeue-Bold.woff2') format('woff2'),
+        url('/css/fonts/MaisonNeue/MaisonNeue-Bold.woff') format('woff'),
+        url('/css/fonts/MaisonNeue/MaisonNeue-Bold.ttf') format('truetype');
+    font-weight: 700; /*bold*/
+    font-style: normal;
+}
 
 body {
     font-family : 'Maison Neue', sans-serif;
