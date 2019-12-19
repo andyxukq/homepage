@@ -44,7 +44,7 @@ ul {
     flex-direction         : row;
     margin                 : 60px auto;
     padding                : 0;
-    box-shadow             : 0 0 0 1px #eaeaea;
+    box-shadow             : 0 0 0 1px #dcdcdc;
     }
 
 .blocks {
@@ -57,7 +57,7 @@ ul {
     flex         : 2 0 0;
     position     : relative;
     background   : rgba(255, 255, 255, .8);
-    border-right : 1px solid #eaeaea;
+    border-right : 1px solid #dcdcdc;
     }
 
 .right-col-block {
