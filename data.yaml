@@ -1,0 +1,69 @@
+metadata:
+  updated_time: 2019/12/18
+personal:
+  name: Andy Xu
+  picture: 1
+  title: COO of Vincross
+  about: My goal at Vincross is to bring emerging consumer robotics technology to international markets. I assume full responsibility for corporate operations in product management, product advocating, robotics engineering and team recruiting.
+education:
+  degree: B.S. in Computer Science
+  school: Renmin University of China
+research_interests:
+  - Networking Applications, Protocols and Infrastructures
+  - Computer Architecture and Operating Systems
+  - Distributed Databases and Data Processing
+awards:
+  - program: ACM International Collegiate Programming Contest
+    name: Silver Medal (Asia Regional)
+    time: October 2012
+  - program: National University Student Innovation Scheme
+    name: Highest Remark
+    time: March 2015
+    description: "Research Project: Internet-based Collaborative Software Engineering<br>Using the idea behind the microkernel architecture pattern in Unix-like systems, we proposed microservices architecture and network protocols in distributed systems. This approach decouples complex software logic and reduces difficulties in development collaboration."
+experience:
+  - time: May 2016 - Present
+    company: Vincross Robotics
+    title: Chief Operating Officer
+    location: San Francisco, CA & Beijing, China
+    description_sections:
+        - title: Bring emerging consumer robotics technology to international markets
+          list:
+            - Designed and operated an online job search engine for both job seekers and recruiters
+            - Designed microservice architecture including pub/sub, load balancer, and data access layer
+            - Implemented methodologies and processes that deliver reliable websites and mobile applications, including unit testing, continuous integration, release management, and product documentation
+        - title: Create MIND OS, a universal robotics OS and SDK
+          list:
+            - MIND OS is based on the Linux kernel and is optimized for robot application development and real-time tasks, it has abstraction layers to manage processes, networking, applications, and peripherals on robots
+            - MIND OS SDK is built with Go language, can integrate third-party libraries such as ROS/OpenCV
+            - MIND OS Cloud Service enables network communication between robots and mobile/IoT devices
+            - 'Website: <a href="https://www.vincross.com/mind">www.vincross.com/mind</a> • Documentation: <a href="https://documentation.vincross.com">documentation.vincross.com</a>'
+  - time: Sept 2014 - May 2016
+    company: Career Dream Technology Limited
+    title: Chief Technology Officer
+    location: Beijing, China
+    descriptions:
+      - Designed and operated an online job search engine for both job seekers and recruiters
+      - Designed microservice architecture including pub/sub, load balancer, and data access layer
+      - Implemented methodologies and processes that deliver reliable websites and mobile applications, including unit testing, continuous integration, release management, and product documentation
+  - time: Oct 2013 - Sept 2014
+    company: Zhihu.com
+    title: Research Engineer
+    location: Beijing, China
+    descriptions:
+      - Built real-time full-text search engine, utilizing methods from natural language processing, user query analysis, and query expansion
+      - Designed and developed an efficient parallel computing algorithm for large-scale content analysis
+portfolios:
+  - name: MIND OS, a universal robotics OS and SDK
+    subtitle: vincross.com/mind
+    link: https://www.vincross.com/mind
+    image: mind_os.jpg
+contacts:
+  - name: LinkedIn
+    link: https://www.linkedin.com/in/andyxukq/
+    text: linkedin.com/in/andyxukq
+  - name: Email
+    link: mailto:a@andyxu.xyz
+    text: a@andyxu.xyz
+  - name: CV
+    link: /files/Kaiqiang_Xu-CV-2020.pdf
+    text: Download CV
