@@ -19,7 +19,7 @@ awards:
   - program: National University Student Innovation Scheme
     name: Highest Remark
     time: March 2015
-    description: "Research Project: Internet-based Collaborative Software Engineering<br>Using the idea behind the microkernel architecture pattern in Unix-like systems, we proposed microservices architecture and network protocols in distributed systems. This approach decouples complex software logic and reduces difficulties in development collaboration."
+    description: "Research Project: Internet-based Collaborative Software Engineering<br>Based on the fundamental concept of the microkernel architecture pattern in Unix-like systems, we proposed microservices architecture and network protocols in distributed systems, this approach decouples complex software logic and reduces difficulties in development collaboration."
 experience:
   - time: May 2016 - Present
     company: Vincross Robotics
@@ -34,7 +34,7 @@ experience:
         - title: Create MIND OS, a universal robotics OS and SDK
           list:
             - MIND OS is based on the Linux kernel and is optimized for robot application development and real-time tasks, it has abstraction layers to manage processes, networking, applications, and peripherals on robots
-            - MIND OS SDK is built with Go language, can integrate third-party libraries such as ROS/OpenCV
+            - Created a developer-friendly SDK that would fulfill the real-time requirements throughout the development of applications for robots by integrating with real-time OS
             - MIND OS Cloud Service enables network communication between robots and mobile/IoT devices
             - 'Website: <a href="https://www.vincross.com/mind">www.vincross.com/mind</a> • Documentation: <a href="https://documentation.vincross.com">documentation.vincross.com</a>'
   - time: Sept 2014 - May 2016
