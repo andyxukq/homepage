@@ -1,0 +1,2 @@
+install:
+	python template.py
