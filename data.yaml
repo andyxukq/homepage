@@ -28,9 +28,9 @@ experience:
     description_sections:
         - title: Bring emerging consumer robotics technology to international markets
           list:
-            - Designed and operated an online job search engine for both job seekers and recruiters
-            - Designed microservice architecture including pub/sub, load balancer, and data access layer
-            - Implemented methodologies and processes that deliver reliable websites and mobile applications, including unit testing, continuous integration, release management, and product documentation
+            - Manage all robotics engineering activities to implement robotic products, including product prototyping, software engineering and embedded engineering on ARM Cortex-A53 and Cortex-M
+            - Designed the proprietary robot operating system MIND OS (see below for details)
+            - Lead, manage and grow a 60+ member engineering team internationally
         - title: Create MIND OS, a universal robotics OS and SDK
           list:
             - MIND OS is based on the Linux kernel and is optimized for robot application development and real-time tasks, it has abstraction layers to manage processes, networking, applications, and peripherals on robots
