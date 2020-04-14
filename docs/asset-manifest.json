@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "https://page.andyxu.xyz/static/css/main.57692d7e.chunk.css",
+    "main.js": "https://page.andyxu.xyz/static/js/main.69ed6d8f.chunk.js",
+    "main.js.map": "https://page.andyxu.xyz/static/js/main.69ed6d8f.chunk.js.map",
+    "runtime-main.js": "https://page.andyxu.xyz/static/js/runtime-main.1119ef0f.js",
+    "runtime-main.js.map": "https://page.andyxu.xyz/static/js/runtime-main.1119ef0f.js.map",
+    "static/css/2.dd1866a9.chunk.css": "https://page.andyxu.xyz/static/css/2.dd1866a9.chunk.css",
+    "static/js/2.c942d6e1.chunk.js": "https://page.andyxu.xyz/static/js/2.c942d6e1.chunk.js",
+    "static/js/2.c942d6e1.chunk.js.map": "https://page.andyxu.xyz/static/js/2.c942d6e1.chunk.js.map",
+    "index.html": "https://page.andyxu.xyz/index.html",
+    "precache-manifest.cb14d98e344c1f4910e2c182748ccd62.js": "https://page.andyxu.xyz/precache-manifest.cb14d98e344c1f4910e2c182748ccd62.js",
+    "service-worker.js": "https://page.andyxu.xyz/service-worker.js",
+    "static/css/2.dd1866a9.chunk.css.map": "https://page.andyxu.xyz/static/css/2.dd1866a9.chunk.css.map",
+    "static/css/main.57692d7e.chunk.css.map": "https://page.andyxu.xyz/static/css/main.57692d7e.chunk.css.map",
+    "static/js/2.c942d6e1.chunk.js.LICENSE.txt": "https://page.andyxu.xyz/static/js/2.c942d6e1.chunk.js.LICENSE.txt",
+    "static/media/index.sass": "https://page.andyxu.xyz/static/media/Gibson-SemiBold.5436eb62.otf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1119ef0f.js",
+    "static/css/2.dd1866a9.chunk.css",
+    "static/js/2.c942d6e1.chunk.js",
+    "static/css/main.57692d7e.chunk.css",
+    "static/js/main.69ed6d8f.chunk.js"
+  ]
+}
