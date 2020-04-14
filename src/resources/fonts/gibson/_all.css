@@ -1,12 +1,5 @@
 @font-face {
 	font-family: 'Gibson';
-	src: url('./Gibson-Light.otf');
-	font-weight: lighter;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Gibson';
 	src: url('./Gibson-Book.otf');
 	font-weight: normal;
 	font-weight: 400;

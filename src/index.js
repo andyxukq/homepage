@@ -8,7 +8,7 @@ import Experience from "./components/Experience";
 import Education from "./components/Education";
 import Awards from "./components/Awards";
 
-import './index.sass';
+import "./index.sass";
 
 class App extends React.Component {
 	render() {
@@ -34,7 +34,11 @@ class App extends React.Component {
 	}
 }
 
-fetch("data.yaml").then((r) => r.text()).then((data_yaml)=>{
+let URL_PREFIX = "https://page.andyxu.xyz/";
+if (!window.location.href.includes(":")) {
+	//URL_PREFIX = "./";
+}
+fetch(URL_PREFIX+"data.yaml").then((r) => r.text()).then((data_yaml)=>{
 	const data = yaml.load(data_yaml);
 	ReactDOM.render(
 		<React.StrictMode>

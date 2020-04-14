@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://page.andyxu.xyz/precache-manifest.cb14d98e344c1f4910e2c182748ccd62.js"
+  "https://page.andyxu.xyz/precache-manifest.ae3fd021f8e6bc0969f6442ce3042a57.js"
 );
 
 self.addEventListener('message', (event) => {
