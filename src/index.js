@@ -9,6 +9,7 @@ import Education from "./components/Education";
 import Awards from "./components/Awards";
 
 import "./index.sass";
+import portrait from "./resources/portrait.jpg";
 
 class App extends React.Component {
 	render() {
@@ -19,7 +20,7 @@ class App extends React.Component {
 					<Summary 
 						name={personal.name} 
 						short_bio={personal.about}
-						portrait={personal.portrait}
+						portrait={portrait}
 					/>
 					<Divider drawLine={true}/>
 					<Experience data={experience}/>
