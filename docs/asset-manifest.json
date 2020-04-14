@@ -1,26 +1,27 @@
 {
   "files": {
     "main.css": "https://page.andyxu.xyz/static/css/main.f628a671.chunk.css",
-    "main.js": "https://page.andyxu.xyz/static/js/main.94e9e37f.chunk.js",
-    "main.js.map": "https://page.andyxu.xyz/static/js/main.94e9e37f.chunk.js.map",
+    "main.js": "https://page.andyxu.xyz/static/js/main.8a9ff5bf.chunk.js",
+    "main.js.map": "https://page.andyxu.xyz/static/js/main.8a9ff5bf.chunk.js.map",
     "runtime-main.js": "https://page.andyxu.xyz/static/js/runtime-main.1119ef0f.js",
     "runtime-main.js.map": "https://page.andyxu.xyz/static/js/runtime-main.1119ef0f.js.map",
     "static/css/2.dd1866a9.chunk.css": "https://page.andyxu.xyz/static/css/2.dd1866a9.chunk.css",
-    "static/js/2.c942d6e1.chunk.js": "https://page.andyxu.xyz/static/js/2.c942d6e1.chunk.js",
-    "static/js/2.c942d6e1.chunk.js.map": "https://page.andyxu.xyz/static/js/2.c942d6e1.chunk.js.map",
+    "static/js/2.4c5d9552.chunk.js": "https://page.andyxu.xyz/static/js/2.4c5d9552.chunk.js",
+    "static/js/2.4c5d9552.chunk.js.map": "https://page.andyxu.xyz/static/js/2.4c5d9552.chunk.js.map",
     "index.html": "https://page.andyxu.xyz/index.html",
-    "precache-manifest.ae3fd021f8e6bc0969f6442ce3042a57.js": "https://page.andyxu.xyz/precache-manifest.ae3fd021f8e6bc0969f6442ce3042a57.js",
+    "precache-manifest.28b619cb9595c8703dee74243e04ff80.js": "https://page.andyxu.xyz/precache-manifest.28b619cb9595c8703dee74243e04ff80.js",
     "service-worker.js": "https://page.andyxu.xyz/service-worker.js",
     "static/css/2.dd1866a9.chunk.css.map": "https://page.andyxu.xyz/static/css/2.dd1866a9.chunk.css.map",
     "static/css/main.f628a671.chunk.css.map": "https://page.andyxu.xyz/static/css/main.f628a671.chunk.css.map",
-    "static/js/2.c942d6e1.chunk.js.LICENSE.txt": "https://page.andyxu.xyz/static/js/2.c942d6e1.chunk.js.LICENSE.txt",
-    "static/media/index.sass": "https://page.andyxu.xyz/static/media/Gibson-SemiBold.5436eb62.otf"
+    "static/js/2.4c5d9552.chunk.js.LICENSE.txt": "https://page.andyxu.xyz/static/js/2.4c5d9552.chunk.js.LICENSE.txt",
+    "static/media/index.sass": "https://page.andyxu.xyz/static/media/Gibson-SemiBold.5436eb62.otf",
+    "static/media/portrait.jpg": "https://page.andyxu.xyz/static/media/portrait.e9ba56ea.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.1119ef0f.js",
     "static/css/2.dd1866a9.chunk.css",
-    "static/js/2.c942d6e1.chunk.js",
+    "static/js/2.4c5d9552.chunk.js",
     "static/css/main.f628a671.chunk.css",
-    "static/js/main.94e9e37f.chunk.js"
+    "static/js/main.8a9ff5bf.chunk.js"
   ]
 }
