@@ -8,6 +8,7 @@
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-image-webp": "^0.7.0",
     "react-scripts": "3.4.1",
     "react-slidedown": "^2.4.5"
   },

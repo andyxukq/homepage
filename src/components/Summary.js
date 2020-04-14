@@ -1,4 +1,6 @@
 import React from "react";
+import Image from 'react-image-webp';
+
 import "./Summary.sass"
 
 class Summary extends React.Component {
@@ -11,7 +13,7 @@ class Summary extends React.Component {
 							<div className="name level-item">{this.props.name}</div>
 							<div className="level-item is-hidden-tablet is-narrow">
 								<div className="portrait">
-									<img src={this.props.portrait} alt="portrait"/>
+									<Image src={this.props.portrait} webp={this.props.portrait_webp} alt="portrait"/>
 								</div>
 							</div>
 						</div>
@@ -19,7 +21,7 @@ class Summary extends React.Component {
 					</div>
 					<div className="column is-hidden-mobile is-narrow">
 						<div className="portrait">
-							<img src={this.props.portrait} alt="portrait"/>
+							<Image src={this.props.portrait} webp={this.props.portrait_webp} alt="portrait"/>
 						</div>
 					</div>
 				</div>

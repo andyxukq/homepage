@@ -10,6 +10,7 @@ import Awards from "./components/Awards";
 
 import "./index.sass";
 import portrait from "./resources/portrait.jpg";
+import portrait_webp from "./resources/portrait.webp";
 
 class App extends React.Component {
 	render() {
@@ -21,6 +22,7 @@ class App extends React.Component {
 						name={personal.name} 
 						short_bio={personal.about}
 						portrait={portrait}
+						portrait_webp={portrait_webp}
 					/>
 					<Divider drawLine={true}/>
 					<Experience data={experience}/>
