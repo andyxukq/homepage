@@ -1,53 +1,60 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import * as Router from "react-router-dom";
 import yaml from "js-yaml";
 
-import Divider from "./components/Divider";
-import Summary from "./components/Summary";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import Awards from "./components/Awards";
+import "@fortawesome/fontawesome-free/css/all.css";
+
+import Navbar from "./components/Navbar";
+import Posts from "./components/Posts";
+import Footer from "./components/Footer";
+import About from "./about";
+import * as requests from "./requests";
 
 import "./index.sass";
-import portrait from "./resources/portrait.jpg";
-import portrait_webp from "./resources/portrait.webp";
 
 class App extends React.Component {
 	render() {
-		const {personal, experience, education, awards} = this.props.data;
 		return (
 			<div className="App">
-				<section className="section">
-					<Summary 
-						name={personal.name} 
-						short_bio={personal.about}
-						portrait={portrait}
-						portrait_webp={portrait_webp}
-					/>
-					<Divider drawLine={true}/>
-					<Experience data={experience}/>
-					<Divider />
-					<Education data={education}/>
-					<Divider />
-					<Awards data={awards}/>
-					<Divider />					
-				</section>
+				<section className="section section-navbar">
+					<Navbar>
+						<div className="item"><Router.NavLink exact to="/">about</Router.NavLink></div>
+						<div className="item"><Router.NavLink to="/projects">projects</Router.NavLink></div>
+						{
+						//<div className="item"><Router.NavLink to="/blog">blog</Router.NavLink></div>
+						}
+					</Navbar>
+				</section>		
+				<Router.Switch>
+					<Router.Route exact path="/">
+						<About data={this.props.data.about}/>
+					</Router.Route>		
+					<Router.Route path="/projects">
+						<section className="section section-projects">
+							<div className="container">
+								<Posts />
+							</div>
+						</section>
+					</Router.Route>		
+					<Router.Route path="/blog">
+						<About data={this.props.data.about}/>
+					</Router.Route>					
+				</Router.Switch>
+				<section className="section section-footer">
+					<Footer />
+				</section>	
 			</div>
 		);
 	}
 }
 
-let URL_PREFIX = "https://page.andyxu.xyz/";
-if (!window.location.href.includes(":")) {
-	//URL_PREFIX = "./";
-}
-fetch(URL_PREFIX+"data.yaml").then((r) => r.text()).then((data_yaml)=>{
-	const data = yaml.load(data_yaml);
+requests.get_about().then((data_yaml)=>{
+	const data = yaml.load(data_yaml.data.value);
 	ReactDOM.render(
-		<React.StrictMode>
-			<App data={data}/>
-		</React.StrictMode>,
+		<Router.HashRouter>
+			<App data={{about: data}}/>
+		</Router.HashRouter>,
 		document.getElementById('root')
 	);
 });
-

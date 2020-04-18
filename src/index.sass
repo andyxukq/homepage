@@ -1,4 +1,6 @@
-@import "./resources/fonts/gibson/_all.css"
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap')
+@import "./resources/fonts/tiempos/_all.css"
+
 @import "./theme.sass"
 @import "bulma/sass/utilities/_all.sass"
 @import "bulma/sass/base/_all.sass"
@@ -7,3 +9,21 @@
 @import "bulma/sass/elements/content.sass"
 @import "bulma/sass/grid/columns.sass"
 @import "bulma/sass/components/level.sass"
+
+.section-summary
+	padding-top: 1.5rem !important
+	padding-bottom: 1.5rem !important
+
+.section-navbar
+	background-color: $background-navbar
+	padding-top: 0 !important
+	padding-bottom: 0 !important
+
+.section-projects
+	padding-top: 1.5rem !important
+	+mobile
+		padding-right: 2rem
+
+.item
+	a:hover
+		border: none

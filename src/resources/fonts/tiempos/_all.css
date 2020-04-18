@@ -1,0 +1,32 @@
+@font-face {
+	font-family: 'Tiempos Text';
+	src: url('./TiemposTextTest-Regular.otf');
+	font-weight: normal;
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tiempos Text';
+	src: url('./TiemposTextTest-Medium.otf');
+	font-weight: bold;
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tiempos Text';
+	src: url('./TiemposTextTest-Semibold.otf');
+	font-weight: bold;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tiempos Text';
+	src: url('./TiemposTextTest-Bold.otf');
+	font-weight: 800;
+	font-style: normal;
+}
+
+

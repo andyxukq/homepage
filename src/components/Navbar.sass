@@ -1,0 +1,32 @@
+@import "../theme.sass"
+
+.Navbar
+	height: 4rem
+	.container
+		height: 100%
+	.row
+		display: flex
+		align-items: center
+		height: 100%
+		+mobile
+			justify-content: space-evenly
+	.item 
+		a
+			font-family: "IBM Plex Sans"
+			color: $text-light
+			padding-left: 1.5rem
+			padding-right: 1.5rem
+			font-weight: bold
+			user-select: none
+			height: 100%
+			display: flex
+			align-items: center
+			text-transform: uppercase
+			font-size: 0.875rem
+			&:hover
+				color: $text
+			&.active
+				color: $text
+		+tablet
+			&:first-child a
+				padding-left: 0rem

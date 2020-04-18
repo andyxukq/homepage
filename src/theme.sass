@@ -1,22 +1,35 @@
-@import "bulma/sass/utilities/initial-variables.sass"
+@import "bulma/sass/utilities/initial-variables"
 
-$family-sans-serif: "Gibson", sans-serif
+$family-sans-serif: "IBM Plex Sans", sans-serif
+$family-serif: "Tiempos Text", serif
 $section-padding: 3rem 2.5rem
 $border-color: #dee2e6
 $text: $black-bis
 $text-light: #888888
+$text-lightest: #bebebe
 $link: $text
 $link-hover: $text
+$background-light: #f3f3f3
+$background-navbar: #ffffff
 
-@media screen and (min-width: 1216px)
+@import "bulma/sass/utilities/_all"
+
+@mixin sans-font
+	font-family: $family-sans-serif
+
+@mixin serif-font
+	font-family: $family-serif
+
++widescreen
 	.container 
    		max-width: 960px !important
-
 
 a:hover 
 	border-bottom: 1px dotted $text-light
 
 .section-title
+	@include serif-font
 	font-size: 1.3rem
-	font-weight: 800
+	font-weight: 700
+
 

@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "bulma": "^0.8.2",
     "js-yaml": "^3.13.1",
+    "moment": "^2.24.0",
     "node-sass": "^4.13.1",
+    "qrcode.react": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-image-webp": "^0.7.0",
+    "react-loading-skeleton": "^2.0.1",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
-    "react-slidedown": "^2.4.5"
+    "react-slidedown": "^2.4.5",
+    "react-tooltip": "^4.2.3"
   },
   "scripts": {
     "start": "react-scripts start",
