@@ -1,5 +1,6 @@
-const URL_PREFIX = "https://api.andyxu.xyz";
-const URL_FILE_PREFIX = "https://api.andyxu.xyz/files";
+const DOMAIN = "andykx.com";
+const URL_PREFIX = `https://api.${DOMAIN}`;
+const URL_FILE_PREFIX = `https://api.${DOMAIN}/files`;
 const URL_ABOUT = "/_/items/keys?single=1&filter[key]=about";
 const URL_PROJECTS = "/_/items/posts?fields=*,picture.data.*";
 

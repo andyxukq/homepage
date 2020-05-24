@@ -1,5 +1,5 @@
 {
-  "name": "andyxu.xyz",
+  "name": "andys-homepage",
   "version": "1.0.0",
   "private": true,
   "dependencies": {
@@ -7,7 +7,7 @@
     "bulma": "^0.8.2",
     "js-yaml": "^3.13.1",
     "moment": "^2.24.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.1",
     "qrcode.react": "^1.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

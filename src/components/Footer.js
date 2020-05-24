@@ -17,11 +17,11 @@ class Footer extends React.Component {
 				<div className="line line-icon">
 					<div className="icon">
 						<span data-tip data-for="wechat"><i className="fab fa-weixin"></i></span>
-						<ReactTooltip id="wechat" clickable="true" type="light" effect="solid" place="top">
+						<ReactTooltip id="wechat" clickable={true} type="light" effect="solid" place="top">
 							<p className="wechat-id">Id: AndyXukq</p>
 							<div className="wechat-qr">
 								<QRCode 
-									size="256"
+									size={128}
 									value="https://u.wechat.com/EPh9HBXtm0TYe-QAIFIwGTM"
 								/>
 							</div>
@@ -34,7 +34,7 @@ class Footer extends React.Component {
 						<Link href="https://www.instagram.com/andyxukq/"><i className="fab fa-instagram"></i></Link>
 					</div>
 					<div className="icon">
-						<Link href="https://www.zhihu.com/people/xukq"><i class="fab fa-zhihu"></i></Link>
+						<Link href="https://www.zhihu.com/people/xukq"><i className="fab fa-zhihu"></i></Link>
 					</div>
 				</div>
 			</div>

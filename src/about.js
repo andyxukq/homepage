@@ -17,7 +17,8 @@ class About extends React.Component {
 			<>
 			<section className="section section-summary">
 				<Summary 
-					name={personal.name} 
+					name={personal.name}
+					name_chinese={personal.name_chinese}
 					short_bio={personal.about}
 					portrait={portrait}
 					portrait_webp={portrait_webp}

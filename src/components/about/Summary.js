@@ -10,7 +10,10 @@ class Summary extends React.Component {
 				<div className="columns">
 					<div className="column">
 						<div className="level is-mobile">
-							<div className="name level-item">{this.props.name}</div>
+							<div className="name level-item">
+								<div>{this.props.name}</div>
+								<div className="chinese">{this.props.name_chinese}</div>
+							</div>
 							<div className="level-item is-hidden-tablet is-narrow">
 								<div className="portrait">
 									<Image src={this.props.portrait} webp={this.props.portrait_webp} alt="portrait"/>
