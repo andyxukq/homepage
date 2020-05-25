@@ -1,4 +1,4 @@
-const DOMAIN = "andykx.com";
+const DOMAIN = "andyxu.io";
 const URL_PREFIX = `https://api.${DOMAIN}`;
 const URL_FILE_PREFIX = `https://api.${DOMAIN}/files`;
 const URL_ABOUT = "/_/items/keys?single=1&filter[key]=about";
