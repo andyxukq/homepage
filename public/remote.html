@@ -10,21 +10,21 @@
 	<body>
 		<div id="root"></div>
 		<script>
-			let URL_PREIX = "https://andykx.com/";
-			let url = URL_PREIX+"asset-manifest.json";
+			let URL_PREFIX = "https://andykx.com/";
+			let url = URL_PREFIX+"asset-manifest.json";
 			fetch(url).then((r)=>r.json()).then((data)=>{
 				const {entrypoints} = data;
 				entrypoints.forEach((r)=>{
-					console.log(URL_PREIX+r);
+					console.log(URL_PREFIX+r);
 					if (r.includes("static/css")) {
 						const dom = document.createElement("link"); 
-						dom.setAttribute("href", URL_PREIX+r);
+						dom.setAttribute("href", URL_PREFIX+r);
 						dom.setAttribute("rel", "stylesheet");
 						document.getElementsByTagName("head")[0].appendChild(dom);
 					}					
 					if (r.includes("static/js")) {
 						const dom = document.createElement("script"); 
-						dom.setAttribute("src", URL_PREIX+r);
+						dom.setAttribute("src", URL_PREFIX+r);
 						document.getElementsByTagName("head")[0].appendChild(dom);
 					}
 				});

@@ -49,8 +49,18 @@ class App extends React.Component {
 	}
 }
 
+function addMetaTag(name, content) {
+	var meta = document.createElement('meta');
+	meta.name = name;
+	meta.content = content.replace(/(<([^>]+)>)/ig, "");
+	document.getElementsByTagName('head')[0].appendChild(meta);
+}
+
 requests.get_about().then((data_yaml)=>{
 	const data = yaml.load(data_yaml.data.value);
+	addMetaTag("description", data.personal.about);
+	addMetaTag("author", "Andy Kaiqiang Xu");
+	addMetaTag("keywords", "Andy Xu, Kaiqiang Xu, 徐凯强");
 	ReactDOM.render(
 		<Router.HashRouter>
 			<App data={{about: data}}/>
