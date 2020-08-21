@@ -16,7 +16,7 @@ class Summary extends React.Component {
 							</div>
 							<div className="level-item is-hidden-tablet is-narrow">
 								<div className="portrait">
-									<Image src={this.props.portrait} webp={this.props.portrait_webp} alt="portrait"/>
+									<img src={this.props.portrait} alt="portrait"/>
 								</div>
 							</div>
 						</div>
@@ -24,7 +24,7 @@ class Summary extends React.Component {
 					</div>
 					<div className="column is-hidden-mobile is-narrow">
 						<div className="portrait">
-							<Image src={this.props.portrait} webp={this.props.portrait_webp} alt="portrait"/>
+									<img src={this.props.portrait} alt="portrait"/>
 						</div>
 					</div>
 				</div>
