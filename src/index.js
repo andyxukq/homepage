@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as Router from "react-router-dom";
-import yaml from "js-yaml";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 
@@ -56,8 +55,7 @@ function addMetaTag(name, content) {
 	document.getElementsByTagName('head')[0].appendChild(meta);
 }
 
-requests.get_about().then((data_yaml)=>{
-	const data = yaml.load(data_yaml.data.value);
+requests.get_about().then((data)=>{
 	addMetaTag("description", data.personal.about);
 	addMetaTag("author", "Andy Kaiqiang Xu");
 	addMetaTag("keywords", "Andy Xu, Kaiqiang Xu, 徐凯强");

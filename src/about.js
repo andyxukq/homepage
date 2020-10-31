@@ -7,9 +7,6 @@ import Experience from "./components/about/Experience";
 import Education from "./components/about/Education";
 import Awards from "./components/about/Awards";
 
-import portrait from "./resources/portrait.jpg";
-import portrait_webp from "./resources/portrait.webp";
-
 class About extends React.Component {
 	render() {
 		const {personal, experience, education, awards} = this.props.data;
