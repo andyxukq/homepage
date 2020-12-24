@@ -1,0 +1,26 @@
+@import "../theme.sass"
+
+.Bio
+	.short-bio
+		font-size: 1.1rem
+		cursor: default
+		+desktop
+			padding-right: 1.5rem
+	.portrait
+		text-align: center
+		+mobile
+			margin-top: 1rem
+		+tablet
+			max-width: 20rem
+		+desktop
+			max-width: 25rem
+		img
+			max-width: 25rem
+			width: 100%
+		.caption
+			font-size: 0.875rem
+			color: $text-light
+			margin-top: 0.25rem
+	.is-hidden-tablet 
+		.portrait img
+			height: 6rem

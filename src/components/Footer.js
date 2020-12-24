@@ -1,8 +1,8 @@
 import React from "react";
 import ReactTooltip from "react-tooltip";
 import QRCode from "qrcode.react";
-import * as moment from "moment";
 
+import Navbar from "./Navbar";
 import { Link } from "../utils";
 
 import "./Footer.sass";
@@ -10,15 +10,16 @@ import "./Footer.sass";
 
 class Footer extends React.Component {
 	render() {
-		const lastModified = moment(new Date(document.lastModified));
 		return (
 			<div className="Footer container">
-				<div className="line">Last modified on {lastModified.format("MMM Do, YYYY")}</div>
-				<div className="line line-icon">
-					<div className="icon">
-						<span data-tip data-for="wechat"><i className="fab fa-weixin"></i></span>
+				<Navbar>
+					<div className="item"><Link href="https://www.linkedin.com/in/andykx/" target="_blank">LinkedIn</Link></div>
+					<div className="item"><Link href="https://www.instagram.com/andyxukq/" target="_blank">Instagram</Link></div>
+					<div className="item"><Link href="mailto:kx@ieee.org" target="_blank">Email</Link></div>
+					<div className="item">
+						<a data-tip data-for="wechat">WeChat</a>
 						<ReactTooltip id="wechat" clickable={true} type="light" effect="solid" place="top">
-							<p className="wechat-id">Id: AndyXukq</p>
+							<p className="wechat-id">id: andyxukq</p>
 							<div className="wechat-qr">
 								<QRCode 
 									size={128}
@@ -26,17 +27,8 @@ class Footer extends React.Component {
 								/>
 							</div>
 						</ReactTooltip>
-					</div>					
-					<div className="icon">
-						<Link href="mailto:kx@ieee.org"><i className="fas fa-envelope"></i></Link>
-					</div>
-					<div className="icon">
-						<Link href="https://www.instagram.com/andyxukq/"><i className="fab fa-instagram"></i></Link>
-					</div>
-					<div className="icon">
-						<Link href="https://www.zhihu.com/people/xukq"><i className="fab fa-zhihu"></i></Link>
-					</div>
-				</div>
+					</div>	
+				</Navbar>
 			</div>
 		);
 	}

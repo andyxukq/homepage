@@ -1,33 +1,20 @@
 @import "../theme.sass"
 .Footer 
-	.line 
-		color: $text-light
-		font-size: 0.75rem
+	.Navbar
+		height: 6rem
+		+mobile
+			height: 4rem
+			font-weight: 500
+			.row
+				justify-content: center
+		.item a
+			font-size: 0.875rem
+	.wechat-qr
+		canvas
+			height: 8rem
+			padding: 0.5rem		
+	.wechat-id
+		font-weight: 500
 		text-align: center
-	.line-icon
-		margin-top: 0.5rem
-		display: flex
-		justify-content: center
-		align-items: middle
-		.icon
-			a
-				color: $text-light
-				border: none
-				&:hover
-					color: $text
-			&:not(:last-child)
-				margin-right: 0.5rem
-			i
-				font-size: 1rem
-				&.fa-comment-alt
-					font-size: 0.9rem
-			svg
-				height: 1rem
-		.wechat-qr
-			canvas
-				height: 8rem
-				padding: 0.5rem		
-		.wechat-id
-			font-weight: 600
-		#wechat
-			padding: 0.5rem
+	#wechat
+		padding: 0.5rem

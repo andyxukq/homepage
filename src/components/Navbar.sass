@@ -1,32 +1,34 @@
 @import "../theme.sass"
 
 .Navbar
-	height: 4rem
+	+font-roboto
+	height: 8rem
+	+desktop
+		height: 10rem
 	.container
 		height: 100%
 	.row
 		display: flex
 		align-items: center
 		height: 100%
-		+mobile
-			justify-content: space-evenly
-	.item 
+	.item
 		a
-			font-family: "IBM Plex Sans"
+			font-size: 1.25rem
+			font-weight: bold
 			color: $text-light
 			padding-left: 1.5rem
 			padding-right: 1.5rem
-			font-weight: bold
 			user-select: none
 			height: 100%
 			display: flex
 			align-items: center
-			text-transform: uppercase
-			font-size: 0.875rem
+			+mobile
+				padding-left: .75rem
+				padding-right: .75rem
 			&:hover
 				color: $text
+				border: none
 			&.active
 				color: $text
-		+tablet
-			&:first-child a
-				padding-left: 0rem
+		&:first-child a
+			padding-left: 0rem

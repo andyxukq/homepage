@@ -1,31 +1,18 @@
 import React from 'react';
 
-import Divider from "./components/Divider";
+import Bio from "./components/Bio";
 
-import Summary from "./components/about/Summary";
-import Experience from "./components/about/Experience";
-import Education from "./components/about/Education";
-import Awards from "./components/about/Awards";
 
 class About extends React.Component {
 	render() {
-		const {personal, experience, education, awards} = this.props.data;
+		const data = this.props.data;
 		return (
 			<>
 			<section className="section section-summary">
-				<Summary 
-					name={personal.name}
-					name_chinese={personal.name_chinese}
-					short_bio={personal.about}
-					portrait={personal.portrait}
-				/>
-				<Divider />
-				<Experience data={experience}/>
-				<Divider />
-				<Education data={education}/>
-				<Divider />
-				<Awards data={awards}/>
-				<Divider />					
+				<Bio 
+					short_bio={data.bio}
+					portrait={data.portrait}
+				/>			
 			</section>
 			</>
 		);

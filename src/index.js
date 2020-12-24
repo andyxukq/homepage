@@ -5,7 +5,6 @@ import * as Router from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 import Navbar from "./components/Navbar";
-import Posts from "./components/Posts";
 import Footer from "./components/Footer";
 import About from "./about";
 import * as requests from "./requests";
@@ -18,28 +17,10 @@ class App extends React.Component {
 			<div className="App">
 				<section className="section section-navbar">
 					<Navbar>
-						<div className="item"><Router.NavLink exact to="/">about</Router.NavLink></div>
-						<div className="item"><Router.NavLink to="/projects">projects</Router.NavLink></div>
-						{
-						//<div className="item"><Router.NavLink to="/blog">blog</Router.NavLink></div>
-						}
+						<div className="item"><a className="active">About Kaiqiang Xu</a></div>
 					</Navbar>
 				</section>		
-				<Router.Switch>
-					<Router.Route exact path="/">
-						<About data={this.props.data.about}/>
-					</Router.Route>		
-					<Router.Route path="/projects">
-						<section className="section section-projects">
-							<div className="container">
-								<Posts />
-							</div>
-						</section>
-					</Router.Route>		
-					<Router.Route path="/blog">
-						<About data={this.props.data.about}/>
-					</Router.Route>					
-				</Router.Switch>
+				<About data={this.props.data}/>
 				<section className="section section-footer">
 					<Footer />
 				</section>	
@@ -56,13 +37,11 @@ function addMetaTag(name, content) {
 }
 
 requests.get_about().then((data)=>{
-	addMetaTag("description", data.personal.about);
-	addMetaTag("author", "Andy Kaiqiang Xu");
-	addMetaTag("keywords", "Andy Xu, Kaiqiang Xu, 徐凯强");
+	addMetaTag("description", data.bio);
+	addMetaTag("author", "Kaiqiang Xu");
+	addMetaTag("keywords", "Kaiqiang Xu, 徐凯强, Andy Xu");
 	ReactDOM.render(
-		<Router.HashRouter>
-			<App data={{about: data}}/>
-		</Router.HashRouter>,
+		<App data={data}/>,
 		document.getElementById('root')
 	);
 });

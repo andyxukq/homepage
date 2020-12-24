@@ -1,16 +1,15 @@
 @import "bulma/sass/utilities/initial-variables"
 
-$family-sans-serif: "IBM Plex Sans", sans-serif
-$family-serif: "Tiempos Text", serif
-$section-padding: 3rem 2.5rem
-$border-color: #dee2e6
-$text: $black-bis
-$text-light: #888888
-$text-lightest: #bebebe
-$link: $text
-$link-hover: $text
-$background-light: #f3f3f3
-$background-navbar: #ffffff
+$color-tangerine-tango: rgb(226,73,47)
+$color-vincross-purple: #492669
+$color-apple-black: #333
+
+$family-sans-serif: "SF Pro Text", sans-serif
+$family-serif: serif
+$font-roboto: "Roboto", sans-serif
+$text: $color-apple-black
+$text-link: $color-tangerine-tango
+$background-navbar: white
 
 @import "bulma/sass/utilities/_all"
 
@@ -20,16 +19,47 @@ $background-navbar: #ffffff
 @mixin serif-font
 	font-family: $family-serif
 
+@mixin font-roboto
+	font-family: $font-roboto
+
 +widescreen
 	.container 
-   		max-width: 960px !important
+		max-width: 960px !important
 
-a:hover 
-	border-bottom: 1px dotted $text-light
+body 
+	font-weight: 400 !important
 
-.section-title
-	@include serif-font
-	font-size: 1.3rem
-	font-weight: 700
+a
+	text-decoration: none
+	color: $text
 
-
+.link
+	position: relative;
+	color: $text
+	border-bottom: 1px dotted $text
+	&.color-vincross-purple
+		border-bottom-color: $color-vincross-purple
+		span::before
+			border-bottom-color: $color-vincross-purple 
+	&.color-tangerine-tango
+		border-bottom-color: $color-tangerine-tango
+		span::before
+			border-bottom-color: $color-tangerine-tango
+	+mobile
+		border-bottom: 2px dotted $text
+	+desktop
+		span
+			position: relative;
+			display: inline-block;
+			&::before
+				border-bottom: 2px solid $text
+				clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+				transition: clip-path 200ms ease;
+				position: absolute;
+				top: -.2rem;
+				content: attr(data-content);
+				color: rgba(0,0,0,0);
+		&:hover span::before
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+			
+			
