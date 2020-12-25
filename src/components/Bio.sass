@@ -1,21 +1,23 @@
 @import "../theme.sass"
 
 .Bio
+	.columns
+		align-items: center
 	.short-bio
 		font-size: 1.1rem
 		cursor: default
+		text-align: left
 		+desktop
-			padding-right: 1.5rem
+			padding-right: 1rem
 	.portrait
 		text-align: center
 		+mobile
 			margin-top: 1rem
 		+tablet
 			max-width: 20rem
-		+desktop
-			max-width: 15rem
+			padding-left: 3rem
 		img
-			max-width: 25rem
+			max-width: 20rem
 			width: 100%
 		.caption
 			font-size: 0.875rem
