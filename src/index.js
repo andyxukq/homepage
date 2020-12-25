@@ -17,7 +17,7 @@ class App extends React.Component {
 			<div className="App">
 				<section className="section section-navbar">
 					<Navbar>
-						<div className="item"><a className="active">About Kaiqiang Xu</a></div>
+						<div className="item"><a className="active">About {this.props.data.name}</a></div>
 					</Navbar>
 				</section>		
 				<About data={this.props.data}/>
