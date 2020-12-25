@@ -5,22 +5,28 @@ import * as Router from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.css";
 
 import Navbar from "./components/Navbar";
+import Bio from "./components/Bio";
 import Footer from "./components/Footer";
-import About from "./about";
 import * as requests from "./requests";
 
 import "./index.sass";
 
 class App extends React.Component {
 	render() {
+		let data = this.props.data;
 		return (
 			<div className="App">
 				<section className="section section-navbar">
 					<Navbar>
-						<div className="item"><a className="active">About {this.props.data.name}</a></div>
+						<div className="item"><a className="active">About {data.name}</a></div>
 					</Navbar>
 				</section>		
-				<About data={this.props.data}/>
+				<section className="section section-summary">
+					<Bio 
+						short_bio={data.bio}
+						portrait={data.portrait}
+					/>			
+				</section>
 				<section className="section section-footer">
 					<Footer />
 				</section>	

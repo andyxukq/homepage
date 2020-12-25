@@ -3,7 +3,7 @@ import ReactTooltip from "react-tooltip";
 import QRCode from "qrcode.react";
 
 import Navbar from "./Navbar";
-import { Link } from "../utils";
+import { Link } from "./Utils";
 
 import "./Footer.sass";
 
