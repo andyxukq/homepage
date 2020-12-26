@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import * as Router from "react-router-dom";
 
 import "@fortawesome/fontawesome-free/css/all.css";
 
