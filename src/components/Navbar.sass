@@ -12,25 +12,23 @@
 		align-items: center
 		height: 100%
 	.item
-		a
-			font-size: 1.25rem
-			+mobile
-				font-size: 1.15rem
-			font-weight: bold
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+		+mobile
+			padding-left: .75rem
+			padding-right: .75rem
+		&:first-child
+			padding-left: 0rem
+		font-size: 1.25rem
+		font-weight: bold
+		+mobile
+			font-size: 1.15rem
+		cursor: default
+		a, span
 			color: $text-light
-			padding-left: 1.5rem
-			padding-right: 1.5rem
-			user-select: none
 			height: 100%
 			display: flex
 			align-items: center
-			+mobile
-				padding-left: .75rem
-				padding-right: .75rem
-			&:hover
+			&:hover, &.active
 				color: $text
 				border: none
-			&.active
-				color: $text
-		&:first-child a
-			padding-left: 0rem

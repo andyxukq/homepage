@@ -17,7 +17,7 @@ class Footer extends React.Component {
 					<div className="item"><Link href="https://www.instagram.com/andyxukq/" target="_blank">Instagram</Link></div>
 					<div className="item"><Link href="mailto:kx@ieee.org" target="_blank">Email</Link></div>
 					<div className="item">
-						<a data-tip data-for="wechat">WeChat</a>
+						<span data-tip data-for="wechat">WeChat</span>
 						<ReactTooltip id="wechat" clickable={true} type="light" effect="solid" place="top">
 							<p className="wechat-id">id: andyxukq</p>
 							<div className="wechat-qr">

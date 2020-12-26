@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="//andykx.com/favicon.png">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="theme-color" content="#000000" />
+		<title>Kaiqiang's Zoom Meeting</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script>
+			let URL_PREFIX = "https://andykx.com/";
+			let url = URL_PREFIX+"asset-manifest.json";
+			fetch(url).then((r)=>r.json()).then((data)=>{
+				const {entrypoints} = data;
+				entrypoints.forEach((r)=>{
+					console.log(URL_PREFIX+r);
+					if (r.includes("static/css")) {
+						const dom = document.createElement("link"); 
+						dom.setAttribute("href", URL_PREFIX+r);
+						dom.setAttribute("rel", "stylesheet");
+						document.getElementsByTagName("head")[0].appendChild(dom);
+					}					
+					if (r.includes("static/js")) {
+						const dom = document.createElement("script"); 
+						dom.setAttribute("src", URL_PREFIX+r);
+						document.getElementsByTagName("head")[0].appendChild(dom);
+					}
+				});
+			});
+		</script>
+		<!-- Analytics -->
+		<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101257072);</script>
+		<script async src="//andykx.com/clicky.js"></script>
+	</body>
+</html>
