@@ -13,7 +13,7 @@ class Footer extends React.Component {
 		return (
 			<div className="Footer container">
 				<Navbar>
-					<div className="item"><Link href="https://www.linkedin.com/in/andykx/" target="_blank">LinkedIn</Link></div>
+					{/*<div className="item"><Link href="https://www.linkedin.com/in/andykx/" target="_blank">LinkedIn</Link></div>*/}
 					<div className="item"><Link href="https://www.instagram.com/andyxukq/" target="_blank">Instagram</Link></div>
 					<div className="item"><Link href="mailto:kx@ieee.org" target="_blank">Email</Link></div>
 					<div className="item">
