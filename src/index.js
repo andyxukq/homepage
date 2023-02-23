@@ -4,8 +4,8 @@ import ReactDOM from 'react-dom';
 import "@fortawesome/fontawesome-free/css/all.css";
 
 import Navbar from "./components/Navbar";
+import Publications from "./components/Publications";
 import Bio from "./components/Bio";
-import Zoom from "./components/Zoom";
 import Footer from "./components/Footer";
 import * as requests from "./requests";
 
@@ -15,39 +15,28 @@ class App extends React.Component {
 	render() {
 		let pathname = window.location.pathname;
 		let data = this.props.data;
-		var title, content, footer;
-
-		title = (
-			<span className="active">About {data.name}</span>
-		);
-		content = (
-			<Bio 
-				short_bio={data.bio}
-				portrait={data.portrait}
-			/>	
-		);
-		footer = (
-			<Footer />
-		);
-
-		if (pathname.includes("/zoom")){
-			title = (<span className="active">You're invited to Kaiqiang's Zoom meeting</span>)
-			content = <Zoom />;
-			footer = null;
-		}
 
 		return (
 			<div className="App">
 				<section className="section section-navbar">
 					<Navbar>
-						<div className="item">{title}</div>
+						<div className="item"><span className="active">About {data.name}</span></div>
 					</Navbar>
 				</section>		
 				<section className="section section-content">
-					{content}
+					<Bio 
+						short_bio={data.bio}
+						portrait={data.portrait}
+					/>	
+				</section>				
+				<section className="section section-content">
+					<Publications 
+						short_bio={data.bio}
+						portrait={data.portrait}
+					/>
 				</section>
 				<section className="section section-footer">
-					{footer}
+					<Footer />
 				</section>	
 			</div>
 		);
