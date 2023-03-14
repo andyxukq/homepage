@@ -8,7 +8,7 @@ class Publications extends React.Component {
 			<div className="Publications container">
 				<div className="section-title">Selected Publications</div>
 				<div className="publication">
-					<div className="venue">SIGMOD 2023 - ACM Conference on Management of Data</div>
+					<div className="venue">SIGMOD 2023 - ACM International Conference on Management of Data</div>
 					<div className="name">Scalable and Efficient Full-Graph GNN Training for Large Graphs</div>
 					<div className="authors">Xinchen Wan﹡, <span className="me">Kaiqiang Xu</span>﹡, Xudong Liao, Yilun Jin, Kai Chen, Xin Jin (﹡Equal Contribution)</div>
 				</div>					
