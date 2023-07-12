@@ -6,7 +6,7 @@ let profile_data = {
 		",
 	"name": "Kaiqiang Xu 徐凯强",
 	"portrait": [{
-		"path": "/portraits/2020-1-colorful.jpg",
+		"path": "/portraits/2023-1.jpg",
 		"caption": ""
 	}]
 };
