@@ -20,7 +20,7 @@ class App extends React.Component {
 			<div className="App">
 				<section className="section section-navbar">
 					<Navbar>
-						<div className="item"><span className="active">About {data.name}</span></div>
+						<div className="item"><span className="active">{data.name}</span></div>
 					</Navbar>
 				</section>		
 				<section className="section section-content">
