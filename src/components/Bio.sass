@@ -5,6 +5,7 @@
 	border-bottom: 1px solid #ddd
 	.columns
 		align-items: center
+		flex-direction: row-reverse
 	.short-bio
 		cursor: default
 		+desktop
@@ -12,17 +13,14 @@
 	.portrait
 		text-align: center
 		+mobile
-			margin-top: 1rem
+			margin-top: .6rem
+			margin-bottom: 1rem
 		+tablet
-			max-width: 18rem
-			padding-left: 3rem
+			max-width: 19rem
+			padding-left: 2rem
 		img
-			max-width: 20rem
 			width: 100%
 		.caption
 			font-size: 0.875rem
 			color: $text-light
 			margin-top: 0.25rem
-	.is-hidden-tablet 
-		.portrait img
-			height: 6rem
