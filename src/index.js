@@ -29,12 +29,6 @@ class App extends React.Component {
 						portrait={data.portrait}
 					/>	
 				</section>				
-				<section className="section section-content">
-					<Publications 
-						short_bio={data.bio}
-						portrait={data.portrait}
-					/>
-				</section>
 				<section className="section section-footer">
 					<Footer />
 				</section>	
