@@ -12,7 +12,7 @@ let profile_data = {
 		",
 	"name": "Kaiqiang Xu 徐凯强",
 	"portrait": [{
-		"path": "/portraits/2023-2.jpg",
+		"path": "/portraits/2024-08.jpg",
 		"caption": ""
 	}]
 };
