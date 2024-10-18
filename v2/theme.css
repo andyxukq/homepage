@@ -1,0 +1,96 @@
+/* Global Style */
+@font-face {
+  font-family: 'SF Pro Text';
+  src: url('./sf-pro-text_regular.woff2');
+  font-weight: 400;
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, html {
+  font-family: "SF Pro Text", sans-serif !important;
+  font-size: 18px;
+  letter-spacing: -.38px;
+  line-height: 1.5;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+header h1 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+section {
+  padding-top: 1rem;
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+p {  
+  margin: 0;
+}
+
+.intro {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.intro .bio {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.intro .photo {
+  max-width: 15rem;
+}
+
+.intro .photo img {
+  max-width: 100%;
+}
+
+.publications {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
+.entry {
+    margin-bottom: 1.5rem;
+}
+.venue {;
+  font-size: 0.8rem;
+}
+.title {
+  font-weight: bold;
+}
+.authors {
+  font-size: 0.8rem;
+}
+.authors span {
+  border-bottom: 1px solid #666;
+}
