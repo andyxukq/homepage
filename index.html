@@ -9,6 +9,8 @@
 		<title>Kaiqiang Xu 徐凯强</title>
 		<link href="minireset.css" rel="stylesheet">
 		<link href="theme.css" rel="stylesheet">
+		<script async src="three.min.js"></script>
+		<script async src="animation.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -34,10 +36,9 @@
 						Besides my hometown of Jinan, I have also called Ann Arbor, Beijing, Berkeley and Hong Kong home.
 					</div>
 				</div>
-
 			</section>		
-			<section class="research">
-				<h2>Research</h2>
+			<section class="research" id="research">
+				<h2 class="colored">Research</h2>
 				<p class="summary">
 					My research focuses on improving the efficiency and accessibility of machine learning systems through novel abstractions, parallelization strategies, and scheduling algorithms that exploit workload patterns in large-scale GPU clusters. My approach draws on techniques from networked systems, architecture design, and data management.
 				</p>
@@ -83,8 +84,8 @@
 					</div>
 				</div>
 			</section>
-			<section class="work">
-				<h2>Startups</h2>
+			<section class="work" id="work">
+				<h2 class="colored">Startups</h2>
 				<p class="summary">
 					I believe that the true impact of technology is shaped by its products. My focus is on innovating design in products and services to develop solutions that users love.
 					With my extensive technical background, I aim to deliver exceptional user experiences while advancing technology.
@@ -130,17 +131,20 @@
 							</div>
 						</div>
 					</div>
+					<p>
+						Earlier in my career: I received BSc in Computer Science from Renmin University of China (2012-2016). During my undergrad study, I worked in serveral startups including as an algorithm engineer at <a class="link" href="https://www.zhihu.com/people/xukq">Zhihu.com</a>. For more details, check my <a href="https://www.linkedin.com/in/andyxukq/" target="_blank">LinkedIn</a> profile.
+					</p>
 				</div>
-				<p class="summary">
-					Earlier in my career: I received BSc in Computer Science from Renmin University of China (2012-2016). During my undergrad study, I worked in serveral startups including as an algorithm engineer at <a class="link" href="https://www.zhihu.com/people/xukq">Zhihu.com</a>. For more details, check my <a href="https://www.linkedin.com/in/andyxukq/" target="_blank">LinkedIn</a> profile.
-				</p>
 			</section>
-			<footer>
+		</div>
+		<footer>
+			<canvas class="bgCanvas" id="topologyCanvas"></canvas>
+			<div class="container">
 				<div><a href="https://www.linkedin.com/in/andyxukq/" target="_blank">LinkedIn</a></div>
 				<div><a href="mailto:kx@ieee.org" target="_blank">Email</a></div>
 				<div><span class="wechat">WeChat</span></div>
-			</footer>
-		</div>
+			</div>
+		</footer>
 		<script>
 			// insert all style-linked a tags with a span
 			document.querySelectorAll('.styled-link').forEach(function(link) {
@@ -152,6 +156,9 @@
 					link.href += (link.href.indexOf('?') > 0 ? '&' : '?') + 'utm_source=kqxu.com';
 					link.setAttribute('target', '_blank');
 				}
+			});
+			window.addEventListener("load", (event) => {
+				TopologyFinale();
 			});
 		</script>
 	</body>
