@@ -19,7 +19,7 @@
 }
 body, html {
   font-family: "SF Pro Text", sans-serif !important;
-  font-size: 16px;
+  font-size: 18px;
   letter-spacing: -.38px;
   line-height: 1.5;
   color: #333;
@@ -27,12 +27,13 @@ body, html {
   text-rendering: optimizelegibility;
   scroll-behavior: smooth;
   overflow-x: hidden;
+  padding-bottom: 10rem;
 }
 
 /* Theme */
 
 .container {
-  max-width: calc(63.75rem + 6rem);
+  max-width: calc(60rem + 6rem);
   margin: 0 auto;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -54,67 +55,259 @@ section {
   padding-bottom: 1rem;
   border-bottom: 1px solid rgb(221, 221, 221);
 }
-
-@media screen and (max-width: 768px) {
-
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a.link {
+  border-bottom: 1px dotted #333;
+}
+a.styled-link {
+  border-bottom: 1px dotted #333;
+}
+a.styled-link.color-tangerine {
+  border-bottom-color: #e2492f;
+}
+a.styled-link span {
+  position: relative;
+	display: inline-block;
+}
+a.styled-link span:before {
+    border-bottom: 2px solid #333;
+    -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    color: transparent;
+    content: attr(data-content);
+    position: absolute;
+    top: -.15rem;
+    transition: -webkit-clip-path .2s ease;
+    transition: clip-path .2s ease;
+    transition: clip-path .2s ease, -webkit-clip-path .2s ease;
+}
+a.styled-link.color-tangerine span:before {
+  border-bottom-color: #e2492f;
+}
+a.styled-link:hover span:before {
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 
 /* Introduction */
-
-header {
+.intro {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-bottom: 2rem;
   margin-top: 3rem;
-  margin-bottom: 2rem;
 }
 header h1 {
   font-size: 1.3rem;
   font-weight: bold;
 }
-.intro {
-  display: flex;
-  gap: 5rem;
-  align-items: center;
-  padding-bottom: 2rem;
+header .title {
+  font-size: 0.85rem;
+  font-weight: bold;
 }
 .intro .bio {
-  font-size: 1.1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 .intro .photo {
-  max-width: 272px;
+  max-width: 260px;
+  display: flex;
 }
 .intro .photo img {
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
+
 /* Research */
 
-.research p {
-  max-width: 800px;
-  font-size: 1.1rem;
+.research .summary {
+  font-size: 0.9rem;
+  max-width: 52rem;
   margin-bottom: 2rem;
+}
+.research h3{
+  margin-top: 0rem;
+  font-size: 0.9rem;
 }
 .research .publications {
   margin-top: 1rem;
 }
 .entry {
   margin-bottom: 1.5rem;
+  display: flex;
+  gap: .8rem;
 }
-.venue {
-  font-size: 0.9rem;
+.entry .content {
+  display: flex;
+  gap: .8rem;
 }
-.venue span {
+.entry .marker {
   font-weight: bold;
+  font-size: 0.8rem;
 }
-.title {
-  font-size: 1.1rem;
-  font-weight: bold;
+.entry .image {
+  margin-left: auto;
+  max-width: 10rem;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
 }
-.authors {
+.entry .image .caption {
   color: #6e6e6e;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.entry .title {
+  font-weight: bold;
   font-size: 0.9rem;
 }
-.authors span {
-  border-bottom: 1px solid #666;
+.entry .authors {
+  color: #6e6e6e;
+  font-size: 0.8rem;
+}
+.entry .authors span {
+  border-bottom: 1px dotted #666;
+}
+.entry .venue {
+  font-size: 0.8rem;
+  margin-top: 0.1rem;
+}
+@media (max-width: 768px) {
+  .entry {
+    margin-bottom: 2rem;
+  }
+  .entry.entry-with-image {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .entry.entry-with-image .image {
+    margin-left: unset;
+  }
+}
+
+/* Startup */
+.work {
+  padding-bottom: 3rem;
+}
+.work .summary {
+  max-width: 52rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
+}
+.experience {
+  display: flex;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+.experience .logo {
+  width: 8rem;
+  flex: 0 0 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 0.8rem;
+  gap: .8rem;
+}
+.experience .logo .name {
+  font-weight: bold;
+  font-size: 0.7rem;
+  color: #666;
+}
+.experience .logo a {
+  line-height: 0;
+}
+.experience .logo img {
+  max-width: 5rem;
+}
+.experience .position {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.experience .bio {
+  margin-bottom: 0.8rem;
+  font-size: 0.8rem;
+}
+.experience .photos {
+  display: flex;
+  margin-top: 1rem;
+  gap: 2rem;
+}
+.experience .photo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+}
+.experience .photo img {
+  max-height: 6rem;
+}
+.experience .photo span {
+  font-size: 0.75rem;
+  border-bottom: 1px dotted #333;
+  display: inline!important;
+}
+.work .postscript {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+  .experience {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .experience-container {
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  .experience .logo {
+    width: 100%;
+    flex: 0 0 100%;
+    align-items: flex-start;
+  }
+  .experience .photos {
+    width: max-content;
+    gap: 1rem;
+  }
+  .experience .photos-scroller {
+    overflow-x: scroll;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Footer */
+footer {
+  font-size: 0.8rem;
+  color: #444;
+  display: flex;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+footer .wechat{
+  cursor: pointer;
+}
+footer .wechat:hover:after{
+  content: " ID: andyxukq";
 }
