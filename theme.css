@@ -207,9 +207,12 @@ header .title {
 }
 .entry .venue {
   font-size: 0.8rem;
-  margin-top: 0.1rem;
+  margin-top: 0.2rem;
 }
 @media (max-width: 768px) {
+  .research .publications {
+    line-height: 1.8;
+  }
   .entry {
     margin-bottom: 2rem;
   }
