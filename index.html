@@ -11,8 +11,7 @@
 		<link href="theme.css" rel="stylesheet">
 		<link rel="preload" href="sf-pro-text-regular.woff" as="font" crossorigin="anonymous">
     	<link rel="preload" href="sf-pro-text-semibold-webfont.woff" as="font" crossorigin="anonymous">
-		<script async src="three.min.js"></script>
-		<script async src="animation.js"></script>
+		<script defer src="animation.js"></script>
 	</head>
 	<body>
 		<div class="container">
@@ -123,12 +122,12 @@
 										<div class="photo"><img src="vincross-photo2.jpg" alt="Vincross" /><span>Demo and Interview at WSJ Event</span></div>
 									</a>
 									<a class="photo-link" href="https://www.theverge.com/2018/7/12/17563688/robot-plant-hybrid-hexa-vincross-succulent" target="_blank">
-										<div class="photo"><img src="vincross-photo4.jpg" alt="Vincross" /><span>Sun-Chasing Mod of HEXA</span></div>
+										<div class="photo"><img src="vincross-photo4.jpg" loading="lazy" alt="Vincross" /><span>Sun-Chasing Mod of HEXA</span></div>
 									</a>
 									<a class="photo-link" href="https://www.cnbc.com/2019/09/23/facebook-announces-acquisition-of-brain-computing-start-up-ctrl-labs.html" target="_blank">
-										<div class="photo"><img src="vincross-photo3.webp" alt="Vincross" /><span>CTRL-labs Showcasing HEXA</span></div>
+										<div class="photo"><img src="vincross-photo3.webp" loading="lazy" alt="Vincross" /><span>CTRL-labs Showcasing HEXA</span></div>
 									</a>
-									<div class="photo"><img src="vincross-photo1.jpg" alt="Vincross" /><span>Interview at NYSE</span></div>
+									<div class="photo"><img src="vincross-photo1.jpg" loading="lazy" alt="Vincross" /><span>Interview at NYSE</span></div>
 								</div>
 							</div>
 						</div>
@@ -158,9 +157,6 @@
 					link.href += (link.href.indexOf('?') > 0 ? '&' : '?') + 'utm_source=kqxu.com';
 					link.setAttribute('target', '_blank');
 				}
-			});
-			window.addEventListener("load", (event) => {
-				TopologyFinale();
 			});
 		</script>
 		<script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c824b24ae475452199acb8376a2a0b53"}'></script>

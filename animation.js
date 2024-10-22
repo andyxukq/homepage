@@ -1,3 +1,12 @@
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', function() {
+        var script = document.createElement('script');
+        script.onload = TopologyFinale;
+        script.src = "three.min.js";
+        document.head.appendChild(script);
+        window.removeEventListener('scroll', arguments.callee);
+    });
+});
 function TopologyFinale() {
     const canvas = document.getElementById("topologyCanvas");
     const sketch = function(p) {
