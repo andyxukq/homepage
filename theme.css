@@ -4,12 +4,14 @@
   src: url('./sf-pro-text-regular.woff');
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 @font-face {
   font-family: 'SF Pro Text';
   src: url('./sf-pro-text-semibold-webfont.woff');
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 body, html {
   font-family: "SF Pro Text", sans-serif !important;
@@ -106,13 +108,15 @@ a.styled-link:hover span:before {
   align-items: center;
   padding-bottom: 2rem;
 }
+header {
+  margin-bottom: 1rem;
+}
 header h1 {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 header .title {
   font-size: 0.85rem;
-  font-weight: bold;
 }
 .intro .bio {
   display: flex;
@@ -120,22 +124,19 @@ header .title {
   gap: 1rem;
 }
 .intro .photo {
- 
-  flex: 0 0 260px;
+  flex: 0 0 240px;
   display: flex;
 }
 .intro .photo img {
-  max-width: 100%;
-  width: 100%;
-  aspect-ratio: 1;
+  
 }
 
 @media (max-width: 768px) {
   .intro .photo {
-    max-width: 100%;
+    flex: 0;
   }
   .intro {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: 2rem;
   }
 }
