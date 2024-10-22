@@ -11,12 +11,6 @@
   font-weight: bold;
   font-style: normal;
 }
-@font-face {
-  font-family: 'SF Pro Text';
-  src: url('./SF-Pro-Text-RegularItalic.otf');
-  font-weight: 400;
-  font-style: italic;
-}
 body, html {
   font-family: "SF Pro Text", sans-serif !important;
   font-size: 18px;
@@ -131,6 +125,8 @@ header .title {
 }
 .intro .photo img {
   max-width: 100%;
+  width: 100%;
+  aspect-ratio: 1;
 }
 
 @media (max-width: 768px) {
