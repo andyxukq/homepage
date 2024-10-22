@@ -134,6 +134,8 @@ header .title {
 @media (max-width: 768px) {
   .intro .photo {
     flex: 0;
+    width: 100%;
+    aspect-ratio: 1;
   }
   .intro {
     flex-direction: column-reverse;
