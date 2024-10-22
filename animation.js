@@ -1,4 +1,15 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // insert all style-linked a tags with a span
+    document.querySelectorAll('.styled-link').forEach(function(link) {
+        link.innerHTML = '<span data-content="'+link.innerHTML+'">' + link.innerHTML + '</span>';
+    });
+    //append utm_source to all links
+    document.querySelectorAll('a').forEach(function(link) {
+        if (link.href.indexOf('http') === 0) {
+            link.href += (link.href.indexOf('?') > 0 ? '&' : '?') + 'utm_source=kqxu.com';
+            link.setAttribute('target', '_blank');
+        }
+    });
     window.addEventListener('scroll', function() {
         var script = document.createElement('script');
         script.onload = TopologyFinale;

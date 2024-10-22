@@ -147,19 +147,6 @@
 				<div><span class="wechat">WeChat</span></div>
 			</div>
 		</footer>
-		<script>
-			// insert all style-linked a tags with a span
-			document.querySelectorAll('.styled-link').forEach(function(link) {
-				link.innerHTML = '<span data-content="'+link.innerHTML+'">' + link.innerHTML + '</span>';
-			});
-			//append utm_source to all links
-			document.querySelectorAll('a').forEach(function(link) {
-				if (link.href.indexOf('http') === 0) {
-					link.href += (link.href.indexOf('?') > 0 ? '&' : '?') + 'utm_source=kqxu.com';
-					link.setAttribute('target', '_blank');
-				}
-			});
-		</script>
 		<script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c824b24ae475452199acb8376a2a0b53"}'></script>
 	</body>
 </html>
