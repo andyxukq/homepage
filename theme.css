@@ -120,7 +120,8 @@ header .title {
   gap: 1rem;
 }
 .intro .photo {
-  max-width: 260px;
+ 
+  flex: 0 0 260px;
   display: flex;
 }
 .intro .photo img {
