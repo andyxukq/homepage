@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     //append utm_source to all links
     document.querySelectorAll('a').forEach(function(link) {
-        if (link.href.indexOf('http') === 0) {
+        if (link.href.indexOf('http') === 0 && link.href.indexOf('kqxu.com') < 0 && link.href.indexOf('127.0.0.1') < 0) {
             link.href += (link.href.indexOf('?') > 0 ? '&' : '?') + 'utm_source=kqxu.com';
             link.setAttribute('target', '_blank');
         }
