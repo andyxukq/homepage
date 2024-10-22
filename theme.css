@@ -209,6 +209,7 @@ header .title {
   }
   .entry.entry-with-image .image {
     margin-left: unset;
+    display:none;
   }
 }
 
