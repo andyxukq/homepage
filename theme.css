@@ -13,7 +13,7 @@
   font-style: normal;
   font-display: swap;
 }
-html, body{
+html {
   font-family: "SF Pro Text", "PingFang SC", sans-serif !important;
   font-size: 18px;
   letter-spacing: -.38px;
@@ -28,6 +28,7 @@ html, body{
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -98,31 +99,53 @@ a.styled-link:hover span:before {
   -webkit-text-fill-color: transparent;
 }
 
-/* Introduction */
-.intro {
-  display: flex;
-  gap: 3rem;
-  align-items: center;
-  padding-bottom: 2rem;
-}
+
+/* Header */
 header {
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid #666;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.72);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  transform: translateY(-100%); /* Initially hidden */
+  transition: transform 0.4s ease; /* Smooth slide-in */
+}
+header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+}
+header .name {
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 header .menu {
   display: flex;
   gap: 2rem;
   font-size: 0.9rem;
 }
-header h1 {
+header .menu a {
+  border-bottom: none;
+}
+
+/* Introduction */
+.intro {
+  display: flex;
+  gap: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+.intro .name h1 {
   font-size: 1.4rem;
   font-weight: bold;
 }
-header .title {
+.intro .name .title {
   font-size: 0.85rem;
 }
 .intro .bio {
@@ -137,9 +160,14 @@ header .title {
 
 @media (max-width: 768px) {
   header {
+    height: 5rem;
+  }
+  header .container {
     flex-direction: column;
     align-items: flex-start;
-    gap: 1.5rem;
+    gap: 0.4rem;
+  }  
+  header .menu {
   }
   .intro .photo {
     flex: 0;
@@ -149,6 +177,8 @@ header .title {
   .intro {
     flex-direction: column-reverse;
     gap: 2rem;
+    padding-top: 0rem;
+    margin-top: -1rem;
   }
 }
 
