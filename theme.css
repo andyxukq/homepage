@@ -241,6 +241,9 @@ header .menu a {
   font-size: 0.8rem;
   margin-top: 0.2rem;
 }
+.entry .venue span {
+  font-weight: bold;
+}
 @media (max-width: 768px) {
   .research .publications {
     line-height: 1.8;
