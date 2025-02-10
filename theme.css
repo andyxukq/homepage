@@ -210,6 +210,7 @@ header .menu a {
   margin-bottom: 1.5rem;
   display: flex;
   gap: .8rem;
+  font-size: 0.8rem;
 }
 .entry .content {
   display: flex;
@@ -235,17 +236,14 @@ header .menu a {
 }
 .entry .title {
   font-weight: bold;
-  font-size: 0.8rem;
 }
 .entry .authors {
   color: #6e6e6e;
-  font-size: 0.8rem;
 }
 .entry .authors span {
   border-bottom: 1px dotted #666;
 }
 .entry .venue {
-  font-size: 0.8rem;
   margin-top: 0.1rem;
 }
 .entry .venue span {
@@ -258,6 +256,7 @@ header .menu a {
   }
   .entry {
     margin-bottom: 2rem;
+    font-size: 0.9rem;
   }
   .entry.entry-with-image {
     flex-direction: column;
@@ -302,7 +301,7 @@ header .menu a {
 }
 .experience .logo .name {
   font-weight: bold;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   color: #666;
 }
 .experience .logo a {
