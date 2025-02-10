@@ -1,3 +1,26 @@
+// Get the browser's language
+const userLanguage = navigator.language || navigator.userLanguage;
+
+// Function to handle redirection based on language
+function redirectBasedOnLanguage(language) {
+    const currentPath = window.location.pathname;
+    const currentHash = window.location.hash;
+
+    // Check if the user is already on /cn or has #en hash (for English)
+    if (currentPath === '/cn.html' || currentHash === '#en') {
+        return;  // Don't redirect if already on the correct page
+    }
+
+    // Redirect to /cn for Chinese users, else add #en hash for English users
+    if (language.startsWith('zh')) {
+        window.location.href = '/cn.html';  // Redirect to /cn for Chinese users
+    }
+}
+
+// Call the function with the user's browser language
+redirectBasedOnLanguage(userLanguage.split('-')[0]);  // Use just the language code (e.g., 'zh', 'en')
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // insert all style-linked a tags with a span
     document.querySelectorAll('.styled-link').forEach(function(link) {
@@ -6,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function() {
     //append utm_source to all links
     document.querySelectorAll('a').forEach(function(link) {
         if (link.href.indexOf('http') === 0 && link.href.indexOf('kqxu.com') < 0 && link.href.indexOf('127.0.0.1') < 0 && link.href.indexOf('/') > 0) {
-            link.href += (link.href.indexOf('?') > 0 ? '&' : '?') + 'utm_source=kqxu.com';
             link.setAttribute('target', '_blank');
         }
     });

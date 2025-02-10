@@ -49,7 +49,6 @@ h3 {
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid rgb(221, 221, 221);
   scroll-margin-top: 2rem;
 }
 @media (max-width: 768px) {
@@ -137,6 +136,9 @@ header .menu a {
 /* Introduction */
 .intro {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
   gap: 3rem;
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -144,6 +146,7 @@ header .menu a {
 .intro .name h1 {
   font-size: 1.4rem;
   font-weight: bold;
+  text-align: center;
 }
 .intro .name .title {
   font-size: 0.85rem;
@@ -161,6 +164,11 @@ header .menu a {
   object-fit: cover;
 }
 
+.section-border {
+  height: 1px;
+  background-color: #e5e5e5;
+}
+
 @media (max-width: 768px) {
   header {
     height: 5rem;
@@ -170,30 +178,29 @@ header .menu a {
     align-items: flex-start;
     gap: 0.4rem;
   }  
-  header .menu {
-  }
   .intro .photo {
     flex: 0;
     width: 100%;
     aspect-ratio: 1;
   }
   .intro {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 2rem;
     padding-top: 0rem;
     margin-top: -1rem;
+    max-width: unset;
   }
 }
 
 /* Research */
 
-.research .summary {
+.research p.summary {
   font-size: 0.9rem;
   max-width: 52rem;
-  margin-bottom: 2rem;
+  margin-bottom: .6rem;
 }
 .research h3 {
-  margin-top: 0rem;
+  margin-top: 2rem;
   font-size: 0.9rem;
 }
 .research .publications {
@@ -228,7 +235,7 @@ header .menu a {
 }
 .entry .title {
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 .entry .authors {
   color: #6e6e6e;
@@ -239,10 +246,11 @@ header .menu a {
 }
 .entry .venue {
   font-size: 0.8rem;
-  margin-top: 0.2rem;
+  margin-top: 0.1rem;
 }
 .entry .venue span {
   font-weight: bold;
+  color: #f05959;
 }
 @media (max-width: 768px) {
   .research .publications {
@@ -269,10 +277,11 @@ header .menu a {
 }
 .work .summary {
   max-width: 52rem;
-  margin-bottom: 2rem;
+  margin-bottom: .6rem;
   font-size: 0.9rem;
 }
 .experience-container {
+  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 2.5rem;
