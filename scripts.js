@@ -32,13 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
             link.setAttribute('target', '_blank');
         }
     });
-    window.addEventListener('scroll', function() {
-        var script = document.createElement('script');
-        script.onload = TopologyFinale;
-        script.src = "assets/three.min.js";
-        document.head.appendChild(script);
-        window.removeEventListener('scroll', arguments.callee);
-    });
+
+    var script = document.createElement('script');
+    script.onload = TopologyFinale;
+    script.src = "assets/three.min.js";
+    document.head.appendChild(script);
+
 
     const scrollThreshold = document.getElementById("scrollMenuThreshold").getBoundingClientRect().top + window.scrollY;
     const scrollMenu = document.getElementById("scrollMenu");
@@ -55,12 +54,12 @@ function TopologyFinale() {
     const canvas = document.getElementById("topologyCanvas");
     const sketch = function(p) {
         let width = canvas.offsetWidth;
-        let height = canvas.offsetHeight;
+        let height = document.getElementsByClassName("intro")[0].offsetHeight + 100;
         let offset = 100;
 
-        let flow_cell_size = 8;
+        let flow_cell_size = 10;
         let noise_size = 0.003; // noise_size controls the overall scale of the noise field across the canvas. It affects how quickly the flow directions change from one point to another.
-        let noise_radius = 0.1; // noise_radius controls the local gradient by determining how far around each grid point the noise is sampled to compute flow vectors. It influences the sharpness of changes in flow direction around each point.
+        let noise_radius = 0.05; // noise_radius controls the local gradient by determining how far around each grid point the noise is sampled to compute flow vectors. It influences the sharpness of changes in flow direction around each point.
         let flow_width = (width + offset * 2) / flow_cell_size;
         let flow_height = (height + offset * 2) / flow_cell_size;
         let flow_grid = [];
@@ -77,6 +76,10 @@ function TopologyFinale() {
         }
 
         p.setup = function() {
+            const seed = p.random([189, 2876, 1811, 3206, 846, 3906, 8933, 3381, 7279]);
+            //const seed = Math.floor(Math.random() * 10000);
+            p.noiseSeed(seed);
+            console.log('Seed:', seed);
             p.createCanvas(width, height, canvas);
             p.background('#fff');
             p.smooth();
@@ -94,7 +97,7 @@ function TopologyFinale() {
             update_particles();
             display_particles();
             tick += 1;
-            if (tick >= 2000) {p.noLoop(); }
+            if (tick >= 1000) {p.noLoop(); }
         };
 
         function init_particles() {
@@ -179,6 +182,7 @@ function TopologyFinale() {
         function display_particles() {
             p.strokeWeight(1);
             p.stroke(137, 150, 78, 5);
+            //p.stroke(0, 0, 0, 5);
             for (let i = 0; i < particles.length; i++) {
                 if (p5.Vector.dist(particles[i].prev, particles[i].pos) < 10)
                     p.line(particles[i].prev.x, particles[i].prev.y, particles[i].pos.x, particles[i].pos.y);
