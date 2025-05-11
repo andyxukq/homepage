@@ -237,6 +237,14 @@ header .menu a {
 .entry .title {
   font-weight: bold;
 }
+.entry .title a {
+  vertical-align: sub;
+  line-height: 0.9rem;
+  margin-left: .2rem;
+}
+.entry .title img {
+  height: 1rem;
+}
 .entry .authors {
   color: #6e6e6e;
 }
