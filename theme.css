@@ -1,22 +1,19 @@
 /* Global Style */
 @font-face {
-  font-family: 'SF Pro Text';
-  src: url('./assets/fonts/sf-pro-text-regular.woff');
-  font-weight: 400;
+  font-family: "OpenAI";
   font-style: normal;
-  font-display: swap;
+  font-weight: 400;
+  src: url("assets/fonts/openai-400.otf");
 }
 @font-face {
-  font-family: 'SF Pro Text';
-  src: url('./assets/fonts/sf-pro-text-semibold-webfont.woff');
-  font-weight: bold;
+  font-family: "OpenAI";
   font-style: normal;
-  font-display: swap;
+  font-weight: 600;
+  src: url("assets/fonts/openai-500.otf");
 }
 html {
-  font-family: "SF Pro Text", "PingFang SC", sans-serif !important;
+  font-family: "OpenAI", "PingFang SC", sans-serif !important;
   font-size: 18px;
-  letter-spacing: -.38px;
   line-height: 1.5;
   color: #333;
   -webkit-font-smoothing: antialiased;
@@ -48,7 +45,7 @@ h3 {
 }
 h3 .normal {
 	font-weight: normal;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 section {
@@ -154,7 +151,7 @@ header .menu a {
   text-align: center;
 }
 .intro .name .title {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 .intro .bio {
   display: flex;
@@ -200,13 +197,11 @@ header .menu a {
 /* Research */
 
 .research p.summary {
-  font-size: 0.9rem;
   max-width: 52rem;
   margin-bottom: .6rem;
 }
 .research h3 {
   margin-top: 2rem;
-  font-size: 0.9rem;
 }
 .research .publications {
   margin-top: 1rem;
@@ -215,7 +210,7 @@ header .menu a {
   margin-bottom: 1.5rem;
   display: flex;
   gap: .8rem;
-  font-size: 0.9rem;
+  line-height: 1.6;
 }
 .entry .content {
   display: flex;
@@ -223,9 +218,9 @@ header .menu a {
 }
 .entry .marker {
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   position: relative;
-  top: 2px;
+  top: 0px;
 }
 .entry .image {
   margin-left: auto;
@@ -253,19 +248,20 @@ header .menu a {
   height: 1rem;
 }
 .entry .authors {
-  color: #6e6e6e;
+  font-size: 0.9rem;
 }
 .entry .authors span {
-  /*border-bottom: 1px dotted #666;*/
   font-weight: bold;
-  color: rgb(0, 119, 255);
 }
 .entry .venue {
   margin-top: 0.1rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.44);
 }
-.entry .venue span.red {
-  font-weight: bold; /* remove bold */
+.entry .venue span.acronym {
+  font-weight: bold; 
+  color:#a00000;
+  margin-right: 0.25rem;
 }
 @media (max-width: 768px) {
   .research .publications {
@@ -288,12 +284,10 @@ header .menu a {
 .work {
   padding-bottom: 3rem;
   border-bottom: none;
-  font-size: 0.9rem;
 }
 .work .summary {
   max-width: 52rem;
   margin-bottom: .6rem;
-  font-size: 0.9rem;
 }
 .experience-container {
   margin-top: 2rem;
@@ -304,7 +298,6 @@ header .menu a {
 .experience {
   display: flex;
   gap: 2rem;
-  font-size: 0.9rem;
 }
 .experience .logo {
   width: 8rem;
@@ -317,7 +310,7 @@ header .menu a {
 }
 .experience .logo .name {
   font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #666;
 }
 .experience .logo a {
@@ -328,13 +321,13 @@ header .menu a {
 }
 .experience .position {
   font-weight: bold;
-  font-size: 0.9rem;
 }
 .experience .bio {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .experience .description {
   margin-top: 0.5rem;
+  font-size: 0.9rem;
 }
 .experience .photos {
   display: flex;
@@ -356,7 +349,7 @@ header .menu a {
   display: inline!important;
 }
 .work .postscript {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 @media (max-width: 768px) {
@@ -385,7 +378,7 @@ header .menu a {
 /* Footer */
 footer {
   position: relative;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   color: #444;
   padding-top: 6rem;
   padding-bottom: 5rem;
