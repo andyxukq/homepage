@@ -239,7 +239,7 @@ header .menu a {
 .entry .title {
   font-weight: bold;
 }
-.entry .title a {
+.entry .title a.icon {
   vertical-align: sub;
   line-height: 0.9rem;
   margin-left: .2rem;
