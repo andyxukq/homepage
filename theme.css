@@ -46,6 +46,11 @@ h3 {
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
 }
+h3 .normal {
+	font-weight: normal;
+  font-size: 0.8rem;
+}
+
 section {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -219,6 +224,8 @@ header .menu a {
 .entry .marker {
   font-weight: bold;
   font-size: 0.8rem;
+  position: relative;
+  top: 2px;
 }
 .entry .image {
   margin-left: auto;
@@ -249,14 +256,16 @@ header .menu a {
   color: #6e6e6e;
 }
 .entry .authors span {
-  border-bottom: 1px dotted #666;
+  /*border-bottom: 1px dotted #666;*/
+  font-weight: bold;
+  color: rgb(0, 119, 255);
 }
 .entry .venue {
   margin-top: 0.1rem;
+  font-size: 0.8rem;
 }
-.entry .venue span {
-  font-weight: bold;
-  color: #f05959;
+.entry .venue span.red {
+  font-weight: bold; /* remove bold */
 }
 @media (max-width: 768px) {
   .research .publications {
@@ -402,3 +411,4 @@ footer .wechat:hover:after{
   z-index: -1;
   mask-image: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255, 1) 50%, rgb(255, 255, 255, 1) 100%);
 }
+

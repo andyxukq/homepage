@@ -8,7 +8,7 @@ function redirectBasedOnLanguage(language) {
 
     // Check if the user is already on /cn or has #en hash (for English)
     if (currentPath === '/cn.html' || currentHash === '#en') {
-        return;  // Don't redirect if already on the correct page
+        return;
     }
 
     // Redirect to /cn for Chinese users, else add #en hash for English users
