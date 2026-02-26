@@ -1,0 +1,44 @@
+[
+	{
+		"venue": "ICLR '26",
+		"venueFull": "International Conference on Learning Representations",
+		"title": "Unlocking Full Efficiency of Token Filtering in Large Language Model Training",
+		"authors": "Di Chai, LI Pengbo, Feiyuan Zhang, Yilun Jin, Han Tian, Kaiqiang Xu, Binhang Yuan, Dian Shen, Junxue Zhang, Kai Chen",
+		"pdf": "https://iclr.cc/virtual/2026/poster/10008281"
+	},
+	{
+		"venue": "NSDI '25",
+		"venueFull": "USENIX Symposium on Networked Systems Design and Implementation",
+		"title": "GREEN: Carbon-efficient Resource Scheduling for Machine Learning Clusters",
+		"authors": "Kaiqiang Xu, Decang Sun, Han Tian, Junxue Zhang, Kai Chen",
+		"pdf": "/papers/nsdi25-green-xu-kaiqiang.pdf"
+	},
+	{
+		"venue": "ASPLOS '25",
+		"venueFull": "ACM International Conference on Architectural Support for Programming Languages and Operating Systems",
+		"title": "Design and Operation of Shared Machine Learning Clusters on Campus",
+		"authors": "Kaiqiang Xu, Decang Sun, Hao Wang, Zhenghang Ren, Xinchen Wan, Xudong Liao, Zilong Wang, Junxue Zhang, Kai Chen",
+		"pdf": "/papers/asplos25-sing-xu-kaiqiang.pdf"
+	},
+	{
+		"venue": "SIGMOD '25",
+		"venueFull": "ACM International Conference on Management of Data",
+		"title": "Sequoia: An Accessible and Extensible Framework for Privacy-Preserving Machine Learning over Distributed Data",
+		"authors": "Kaiqiang Xu, Di Chai, Junxue Zhang, Fan Lai, Kai Chen",
+		"pdf": "/papers/sigmod25-sequoia-xu-kaiqiang.pdf"
+	},
+	{
+		"venue": "OSDI '25",
+		"venueFull": "USENIX Symposium on Operating Systems Design and Implementation",
+		"title": "Enabling Efficient GPU Communication over Multiple NICs with FuseLink",
+		"authors": "Zhenghang Ren, Yuxuan Li, Zilong Wang, Xinyang Huang, Wenxue Li, Kaiqiang Xu, Xudong Liao, Yijun Sun, Bowen Liu, Han Tian, Junxue Zhang, Mingfei Wang, Zhizhen Zhong, Guyue Liu, Ying Zhang, Kai Chen",
+		"pdf": "/papers/osdi25-fuselink.pdf"
+	},
+	{
+		"venue": "SIGMOD '23",
+		"venueFull": "ACM International Conference on Management of Data",
+		"title": "Scalable and Efficient Full-Graph GNN Training for Large Graphs",
+		"authors": "Xinchen Wan, Kaiqiang Xu (Co-first Author), Xudong Liao, Yilun Jin, Kai Chen, Xin Jin",
+		"pdf": "/papers/sigmod23-g3-xu-kaiqiang.pdf"
+	}
+]
