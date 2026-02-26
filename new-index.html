@@ -11,6 +11,7 @@
 	<link href="new-theme.css" rel="stylesheet">
 	<script src="grid-components.js"></script>
 	<script src="scripts/render-publications.js"></script>
+	<script src="scripts.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -28,17 +29,11 @@
 				</grid-cell>
 				<grid-cell>
 					<div class="backstory-text">
-						<div>
-							See you there
-                        </div>
-						<div class="backstory-links">
-							<a href="https://www.linkedin.com/in/andyxukq/" class="backstory-link-icon">
-								<img src="assets/icon-linkedin.svg" alt="LinkedIn" />
-							</a>
-							<a href="mailto:kqxu@acm.org" class="backstory-link-icon">
-								<img src="assets/icon-email.svg" alt="Email" />
-							</a>
-						</div>
+						<p>
+							Write when drunk. <br>
+							Edit when sober. <br>
+							Marketing is the hangover.
+						</p>
 					</div>
 				</grid-cell>
 			</grid-wrapper>
@@ -148,27 +143,31 @@
 							Outside of work, I enjoy art and music whenever I can. My favorite artist is Edward Hopper for his <a href="https://www.artic.edu/articles/808/nighthawks-as-a-symbol-of-hope">Nighthawks (1942)</a>, among others. I recommend the timeless musical <a href="https://www.youtube.com/watch?v=_BpsTZ4UZk8">Les Misérables</a> to everyone. I dance Argentine Tango and have a love for <a href="https://www.youtube.com/playlist?list=PLMvB-1EVBfr8_QN_lkhibeZeM8pntIaQY">Golden Age Tango music</a>.
 						</p>
 						<p>
+							I share my days with Xinning, who runs a bakery with quiet passion and creativity. She holds a Master of Arts in cultural management and brings that sensibility into her brand and craft. She still bakes on her own - every bread carries her care, her rhythm, and a touch of art.
+						</p>
+						<p>
 							Besides my hometown of Jinan, I have also called Ann Arbor, Beijing, Berkeley, Shenzhen and Hong Kong home.
 						</p>
 					</div>
 				</grid-cell>
-				<grid-cell></grid-cell>
+				<grid-cell>
+					<div class="personal-text">
+						<div>
+							See you there
+                        </div>
+						<div class="personal-links">
+							<a href="https://www.linkedin.com/in/andyxukq/" class="personal-link-icon icon-linkedin">
+								<img src="assets/icon-linkedin.svg" alt="LinkedIn" />
+							</a>
+							<a href="mailto:kqxu@acm.org" class="personal-link-icon icon-email">
+								<img src="assets/icon-email.svg" alt="Email" />
+							</a>
+						</div>
+					</div>
+				</grid-cell>
 			</grid-wrapper>
 		</section>
 	</div>
-
-	<footer>
-		<div class="container">
-			<a href="/cn.html">中文页面</a>
-			<a href="https://www.linkedin.com/in/andyxukq/" class="footer-link-icon">
-				<img src="assets/icon-linkedin.svg" alt="LinkedIn" />
-				LinkedIn
-			</a>
-			<a href="mailto:kqxu@acm.org" class="footer-link-icon">
-				<img src="assets/icon-email.svg" alt="Email" />
-				Email
-			</a>
-		</div>
-	</footer>
+	<canvas class="bgCanvas" id="topologyCanvas"></canvas>
 </body>
 </html>

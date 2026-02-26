@@ -37,24 +37,14 @@ document.addEventListener('DOMContentLoaded', function() {
     script.onload = TopologyFinale;
     script.src = "assets/three.min.js";
     document.head.appendChild(script);
-
-
-    const scrollThreshold = document.getElementById("scrollMenuThreshold").getBoundingClientRect().top + window.scrollY;
-    const scrollMenu = document.getElementById("scrollMenu");
-
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > scrollThreshold) {
-            scrollMenu.style.transform = "translateY(0)"; // Slide menu in
-        } else {
-            scrollMenu.style.transform = "translateY(-100%)"; // Slide menu out
-        }
-    });
 });
+
 function TopologyFinale() {
     const canvas = document.getElementById("topologyCanvas");
     const sketch = function(p) {
         let width = canvas.offsetWidth;
-        let height = document.getElementsByClassName("intro")[0].offsetHeight + 100;
+        let height = document.getElementById("personal").offsetHeight;
+        canvas.style.marginTop = (-height+60) + "px";
         let offset = 100;
 
         let flow_cell_size = 10;
@@ -81,7 +71,7 @@ function TopologyFinale() {
             p.noiseSeed(seed);
             console.log('Seed:', seed);
             p.createCanvas(width, height, canvas);
-            p.background('#fff');
+            p.background('#fbf7f0');
             p.smooth();
             p.noStroke();
             //p.blendMode(p.OVERLAY);
@@ -181,8 +171,8 @@ function TopologyFinale() {
 
         function display_particles() {
             p.strokeWeight(1);
-            p.stroke(137, 150, 78, 5);
-            //p.stroke(0, 0, 0, 5);
+            //p.stroke(137, 150, 78, 5);
+            p.stroke(0, 0, 0, 5);
             for (let i = 0; i < particles.length; i++) {
                 if (p5.Vector.dist(particles[i].prev, particles[i].pos) < 10)
                     p.line(particles[i].prev.x, particles[i].prev.y, particles[i].pos.x, particles[i].pos.y);
