@@ -5,7 +5,15 @@
 const authorLinks = {
 	'Zhenghang Ren': 'https://home.cse.ust.hk/~zrenak/',
 	'Kai Chen': 'https://home.cse.ust.hk/~kaichen/',
-	'Junxue Zhang': 'https://snowzjx.me/'
+	'Junxue Zhang': 'https://snowzjx.me/',
+	'Di Chai': 'https://di-chai.github.io/',
+	'Binhang Yuan': 'https://binhangyuan.github.io/',
+	'Yilun Jin': 'https://kl4805.github.io/',
+	'Han Tian': 'https://tianhan4.github.io/',
+	'Fan Lai': 'https://www.fanlai.me/',
+	'Xinchen Wan': 'https://xcwanandy.github.io/',
+	'Xudong Liao': 'https://xudongliao.github.io/',
+	'Hao Wang': 'https://whwh1996.github.io/'
 };
 
 async function renderPublicationsPage() {
