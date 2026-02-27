@@ -87,7 +87,7 @@
 	
 .publication-entry .authors .author-self {
 	font-weight: 700;
-	text-decoration: underline;
+	border-bottom: 1px dotted #333;
 }
 
 .publication-entry .venue-full {
