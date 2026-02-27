@@ -1,185 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="description" content="Kaiqiang (Andy) Xu, PhD in Computer Science, his research focuses on designing efficient and accessible systems for machine learning, with publications in top-tier conferences. Previously, as COO of Vincross Robotics (2016-2020), he led the development of a world-renowned all-terrain robot, gaining recognition from outlets like the Wall Street Journal. ">
-		<link rel="icon" type="image/png" href="images/favicon.png">
-		<meta name="theme-color" content="#000000" />
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Kaiqiang (Andy) Xu, PhD in Computer Science, his research focuses on designing efficient and accessible systems for machine learning, with publications in top-tier conferences. Previously, as COO of Vincross Robotics (2016-2020), he led the development of a world-renowned all-terrain robot, gaining recognition from outlets like the Wall Street Journal.">
+	<link rel="icon" type="image/png" href="images/favicon.png">
+	<meta name="theme-color" content="#fbf7f0" />
+	<title>Kaiqiang (Andy) Xu</title>
 
-		<title>Kaiqiang (Andy) Xu</title>
-		<link href="assets/minireset.css" rel="stylesheet">
-		<link href="theme.css?timestamp=20250613v3" rel="stylesheet">
-		<link rel="preload" href="assets/openai-400.otf" as="font" crossorigin="anonymous">
-		<link rel="preload" href="assets/openai-500.otf" as="font" crossorigin="anonymous">
-		<script defer src="scripts.js"></script>
-	</head>
-	<body>
-		<header id="scrollMenu">
-			<div class="container">
-				<div class="name">Kaiqiang (Andy) Xu</div>
-				<div class="menu">
-					<div><a class="link" href="#research">Research</a></div>
-					<div><a class="link" href="#work">Startups</a></div>
-					<div><a class="link" href="/cn.html">中文页面</a></div>
-				</div>
-			</div>
-		</header>
-		<div class="container">
-			<section class="intro">
-				<div class="bio">
-					<div class="name">
-						<h1>Kaiqiang (Andy) Xu</h1>
-						<span id="scrollMenuThreshold" class="title">PhD in Computer Science</span>
-					</div>
-				</div>
-				<div class="photo">
-					<img src="images/photo-2024.jpg" alt="photo" />
-				</div>
+	<link href="assets/minireset.css" rel="stylesheet">
+	<link href="new-theme.css" rel="stylesheet">
+	
+	<script src="scripts/grid-components.js"></script>
+	<script src="scripts/render-publications.js"></script>
+	<script src="scripts.js"></script>
+</head>
+<body>
+	<div class="container">
+		<section class="hero">
+			<h1>Kaiqiang Xu &nbsp;/&nbsp; Andy</h1>
+			<div class="title">PhD in Computer Science</div>
+		</section>
 
-				<canvas class="bgCanvas" id="topologyCanvas"></canvas>
-			</section>	
-			<div class="section-border"></div>
-			<section class="research" id="research">
-				<h2 class="colored">Research</h2>
-				<p class="summary">
-					My research studies the system foundations of large-scale AI &mdash; from new system abstractions to scheduling algorithms and parallelization strategies that enables more accessible and efficient AI computing infrastructure. 
-					I have led the design and operation of multiple production AI clusters.
-				</p>
-				<p class="summary">
-					My work has been published in top-tier conferences across computer networks, operating systems, computer architecture, and databases, including NSDI, OSDI, ASPLOS, and SIGMOD. 
-					I was a researcher at Google, where I worked on large model inference acceleration.
-				</p>
-				<p class="summary">
-					I received my PhD in Computer Science from HKUST, advised by <a class="link" href="https://home.cse.ust.hk/~kaichen/">Prof. Kai Chen</a>, where my PhD dissertation received the Honorable Mention of the CSE Best PhD Dissertation Award.
-				</p>
-				<h3>Selected Papers <span class="normal">(<a class="link" href="publications.html">Full publication list</a> and <a class="link" href="https://scholar.google.com/citations?user=pZx1AHkAAAAJ">Google Scholar</a>)</span></h3>
-				<div class="publications">
-					<div class="entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
-						<span class="marker">•</span>
-						<div>
-							<div class="title">
-								<a href="/papers/nsdi25-green-xu-kaiqiang.pdf" rel="document" aria-label="Download paper PDF" itemprop="url"><span itemprop="name">GREEN: Carbon-efficient Resource Scheduling for Machine Learning Clusters</span></a>
-								<a href="https://www.usenix.org/conference/nsdi25/presentation/xu-kaiqiang" rel="external" aria-label="View paper on USENIX website" itemprop="sameAs" class="icon"><img src="assets/icon-link.svg" alt="link"/></a>
-								<a href="/papers/nsdi25-green-xu-kaiqiang.pdf" rel="document" aria-label="Download paper PDF" itemprop="url" class="icon"><img src="assets/icon-file.svg" alt="download paper pdf file"/></a>
-							</div>
-							<div class="authors" itemprop="author"><span>Kaiqiang Xu</span>, Decang Sun, Han Tian, Junxue Zhang, Kai Chen</div>
-							<div class="venue"><span class="acronym">NSDI <span itemprop="datePublished">'25</span></span> <span itemprop="publisher">USENIX Symposium on Networked Systems Design and Implementation</span></div>
-						</div>
+		<section id="backstory">
+			<grid-wrapper>
+				<grid-cell>
+					<div class="backstory-photo">
+						<img src="images/photo-2024.jpg" alt="Kaiqiang (Andy) Xu" />
 					</div>
-					<div class="entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
-						<span class="marker">•</span>
-						<div>
-							<div class="title">
-								<a href="/papers/asplos25-sing-xu-kaiqiang.pdf" rel="document" aria-label="Download paper PDF" itemprop="url"><span itemprop="name">Design and Operation of Shared Machine Learning Clusters on Campus</span></a>
-								<a href="https://doi.org/10.1145/3669940.3707266" rel="external" aria-label="View paper on ACM Digital Library" itemprop="sameAs" class="icon"><img src="assets/icon-link.svg" alt="link"/></a>
-								<a href="/papers/asplos25-sing-xu-kaiqiang.pdf" rel="document" aria-label="Download paper PDF" itemprop="url" class="icon"><img src="assets/icon-file.svg" alt="download paper pdf file"/></a>
-							</div>
-							<div class="authors" itemprop="author"><span>Kaiqiang Xu</span>, Decang Sun, Hao Wang, Zhenghang Ren, Xinchen Wan, Xudong Liao, Zilong Wang, Junxue Zhang, Kai Chen</div>
-							<div class="venue"><span class="acronym">ASPLOS <span itemprop="datePublished">'25</span></span> <span itemprop="publisher">ACM International Conference on Architectural Support for Programming Languages and Operating Systems</span></div>
-						</div>
+				</grid-cell>
+				<grid-cell>
+					<div class="backstory-text">
+						<p>
+							Write when drunk. <br>
+							Edit when sober. <br>
+							Marketing is the hangover.
+						</p>
 					</div>
-					<div class="entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
-						<span class="marker">•</span>
-						<div>
-							<div class="title">
-								<a href="/papers/sigmod25-sequoia-xu-kaiqiang.pdf" rel="document" aria-label="Download paper PDF" itemprop="url"><span itemprop="name">Sequoia: An Accessible and Extensible Framework for Privacy-Preserving Machine Learning over Distributed Data</span></a>
-								<a href="https://doi.org/10.1145/3709742" rel="external" aria-label="View paper on ACM Digital Library" itemprop="sameAs" class="icon"><img src="assets/icon-link.svg" alt="link"/></a>
-								<a href="/papers/sigmod25-sequoia-xu-kaiqiang.pdf" rel="document" aria-label="Download paper PDF" itemprop="url" class="icon"><img src="assets/icon-file.svg" alt="download paper pdf file"/></a>
-							</div>
-							<div class="authors" itemprop="author"><span>Kaiqiang Xu</span>, Di Chai, Junxue Zhang, Fan Lai, Kai Chen</div>
-							<div class="venue"><span class="acronym">SIGMOD <span itemprop="datePublished">'25</span></span> <span itemprop="publisher">ACM International Conference on Management of Data</span></div>
-						</div>
-					</div>
-					<div class="entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
-						<span class="marker">•</span>
-						<div>
-							<div class="title">
-								<span itemprop="name">Enabling Efficient GPU Communication over Multiple NICs with FuseLink</span>
-								<a href="https://www.usenix.org/conference/osdi25/presentation/ren" rel="external" aria-label="View paper on USENIX website" itemprop="sameAs" class="icon"><img src="assets/icon-link.svg" alt="link"/></a>
-								<a href="/papers/osdi25-fuselink.pdf" rel="document" aria-label="Download paper PDF" itemprop="url" class="icon"><img src="assets/icon-file.svg" alt="download paper pdf file"/></a>
-							</div>
-							<div class="authors" itemprop="author">Zhenghang Ren, Yuxuan Li, Zilong Wang, Xinyang Huang, Wenxue Li, <span>Kaiqiang Xu</span>, Xudong Liao, Yijun Sun, Bowen Liu, Han Tian, Junxue Zhang, Mingfei Wang, Zhizhen Zhong, Guyue Liu, Ying Zhang, Kai Chen</div>
-							<div class="venue"><span class="acronym">OSDI <span itemprop="datePublished">'25</span></span> <span itemprop="publisher">USENIX Symposium on Operating Systems Design and Implementation</span></div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<div class="section-border"></div>
-			<section class="work" id="work">
-				<h2 class="colored">Startups</h2>
-				<p class="summary">
-					My work seeks the synergy between technology and creativity. I aim to design exceptional user experiences in products that embed advanced technologies, transforming the way people interact with complex systems.
-					The Wall Street Journal featured <a class="styled-link" href="https://www.wsj.com/video/the-six-legged-robot-that-wants-to-teach-programming/156A291B-75BE-4EE4-8354-7D59FAAB722D">an exclusive interview with me</a> for creating the world-recognized all-terrain robot HEXA.
-				</p>
-				<p class="summary">
-					I was named to the Forbes 30 Under 30 list twice, in <a class="link" href="https://www.forbeschina.com/lists/1752">2020 (China)</a> and <a class="link" href="https://www.forbes.com/30-under-30/2022/asia/retail-ecommerce">2022 (Asia)</a>.
-				</p>
-				<div class="experience-container">
-					<div class="experience">
-						<div class="logo">
-							<a href="https://vesta-sleep.com/pages/our-story"><img src="images/vesta-logo.png" alt="Vesta Sleep" /></a>
-							<span class="name">Vesta&nbsp;Sleep</span>
-						</div>
-						<div>
-							<div class="position">Cofounder and COO, Vesta Sleep, 2020-Now</div>
-							<div class="bio">Cofounded w/ Zhenyu Gu, Founder and CEO, in New York in 2020. Investor: Sequoia Capital.</div>
-							<div class="description">Vesta designs and manufactures eco-friendly, innovative, and fun household essentials for consumers worldwide, promoting a high-quality, sustainable lifestyle. Forbes named Vesta one of <a class="link" href="https://www.forbes.com/sites/forbesasiateam/2022/08/29/forbes-asia-100-to-watch-2022/">the 100 innovative companies to watch</a>. </div>
-						</div>
-					</div>
-					<div class="experience">
-						<div class="logo">
-							<a href="#"><img src="images/vincross-logo.png" alt="Vesta Sleep" /></a>
-							<span class="name">Vincross&nbsp;Robotics</span>
-						</div>
-						<div>
-							<div class="position">COO, Vincross Robotics, 2016-2020</div>
-							<div class="bio">Investors include GGV Capital, Lenovo Capital and ZhenFund.</div>
+				</grid-cell>
+			</grid-wrapper>
+		</section>
 
+		<section id="research">
+			<grid-wrapper>
+				<grid-cell>
+					<div class="researcher-bio">
+						<h2>Research</h2>
+						<p>
+							My research focuses on designing efficient and accessible systems for machine learning. I study the system foundations of large-scale AI — from new system abstractions to scheduling algorithms and parallelization strategies that enable more accessible and efficient AI computing infrastructure.
+						</p>
+						<p>
+							My work has been published in top-tier conferences across computer networks, operating systems, computer architecture, and databases, including NSDI, OSDI, ASPLOS, and SIGMOD.
+						</p>
+					</div>
+				</grid-cell>
+				<grid-cell>
+					<div class="publications">
+						<h2>Recent Publications</h2>
+						<div class="publication-list">
+							<!-- Publications will be loaded from publications.json via JavaScript -->
+						</div>
+						<div class="publications-links">
+                            <a href="#" class="full-publications-link">show more</a>
+                            <a href="https://scholar.google.com/citations?user=pZx1AHkAAAAJ">Google Scholar</a>
+                        </div>
+					</div>
+				</grid-cell>
+			</grid-wrapper>
+		</section>
+
+		<section id="startups">
+			<grid-wrapper>
+				<grid-cell>
+					<div class="startups-bio">
+						<h2>Startups</h2>
+						<p>
+							My work seeks the synergy between technology and creativity. I aim to design exceptional user experiences in products that embed advanced technologies, transforming the way people interact with complex systems.
+						</p>
+						<p>
+							I was named to the infamous Forbes 30 Under 30 list twice, in <a href="https://www.forbes.com/30-under-30/2022/asia/retail-ecommerce">2022 (Asia)</a> and <a href="https://www.forbeschina.com/lists/1752">2020 (China)</a>.
+                            The Wall Street Journal featured <a href="https://www.wsj.com/video/the-six-legged-robot-that-wants-to-teach-programming/156A291B-75BE-4EE4-8354-7D59FAAB722D">an exclusive interview with me</a> for creating the world-recognized all-terrain robot HEXA.
+						</p>
+					</div>
+				</grid-cell>
+				<grid-cell>
+					<div class="startup-experience">
+						<div class="experience-item">
+							<div class="company-container">
+								<div class="company-info">
+									<div class="company-name">Vesta Sleep</div>
+									<div class="position">Cofounder and COO, 2020-Now</div>
+								</div>
+								<div class="company-logo">
+									<a href="https://vesta-sleep.com/pages/our-story"><img src="images/vesta-logo.png" alt="Vesta Sleep" /></a>
+								</div>
+							</div>
 							<div class="description">
-								Vincross empowers users to access and build the future of robotics. I led a global team and made the first programmable all-terrain robot <a class="styled-link" href="https://robotsguide.com/robots/hexa">HEXA</a> for individuals to create robotic applications. Reported by the Wall Street Journal, The Verge, WIRED, IEEE Specturm and more.
+								Cofounded with Zhenyu Gu, Founder and CEO.
+                                Investor: Sequoia Capital. Vesta designs and manufactures eco-friendly, innovative, and fun household essentials for consumers worldwide, promoting a high-quality, sustainable lifestyle.
 							</div>
+						</div>
 
+						<div class="experience-item">
+							<div class="company-container">
+								<div class="company-info">
+									<div class="company-name">Vincross Robotics</div>
+									<div class="position">COO, 2016-2020</div>
+								</div>
+								<div class="company-logo">
+									<div class="logo">
+										<a href="#"><img src="images/vincross-logo.png" alt="Vincross Robotics" /></a>
+									</div>
+								</div>
+							</div>
+							<div class="description">
+								Investors include GGV Capital, Lenovo Capital and ZhenFund. Vincross empowers users to access and build the future of robotics. I led a global team and made the first programmable all-terrain robot <a href="https://robotsguide.com/robots/hexa">HEXA</a> for individuals to create robotic applications. Reported by the Wall Street Journal, The Verge, WIRED, IEEE Spectrum and more.
+							</div>
 							<div class="photos-scroller">
 								<div class="photos">
-									<a class="photo-link" href="https://www.wsj.com/video/the-six-legged-robot-that-wants-to-teach-programming/156A291B-75BE-4EE4-8354-7D59FAAB722D" target="_blank">
-										<div class="photo"><img src="images/vincross-photo2.jpg" alt="Vincross" /><span>Demo and Interview at WSJ Event</span></div>
-									</a>
 									<a class="photo-link" href="https://www.theverge.com/2018/7/12/17563688/robot-plant-hybrid-hexa-vincross-succulent" target="_blank">
 										<div class="photo"><img src="images/vincross-photo4.jpg" loading="lazy" alt="Vincross" /><span>Sun-Chasing Mod of HEXA</span></div>
 									</a>
+                                    <a class="photo-link" href="https://www.wsj.com/video/the-six-legged-robot-that-wants-to-teach-programming/156A291B-75BE-4EE4-8354-7D59FAAB722D" target="_blank">
+										<div class="photo"><img src="images/vincross-photo2.jpg" alt="Vincross" /><span>Speech at WSJ Tech Live</span></div>
+									</a>
 									<a class="photo-link" href="https://www.cnbc.com/2019/09/23/facebook-announces-acquisition-of-brain-computing-start-up-ctrl-labs.html" target="_blank">
-										<div class="photo"><img src="images/vincross-photo3.jpg" loading="lazy" alt="Vincross" /><span>CTRL-labs Showcasing HEXA</span></div>
+										<div class="photo"><img src="images/vincross-photo3.jpg" loading="lazy" alt="Vincross" /><span>CTRL-labs showcasing HEXA</span></div>
 									</a>
 									<div class="photo"><img src="images/vincross-photo1.jpg" loading="lazy" alt="Vincross" /><span>Interview at NYSE</span></div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<p>
-						Earlier in my career, I worked in serveral startups including as an algorithm engineer at Zhihu.com (NYSE: ZH) and a backend engineer at Tantan (now part of MOMO, NASDAQ: MOMO). See my <a href="https://www.linkedin.com/in/andyxukq/" target="_blank">LinkedIn</a> profile for more details.
-					</p>
-					<div class="section-border"></div>
+				</grid-cell>
+			</grid-wrapper>
+		</section>
 
-					<div>
-						Outside of work, I enjoy art and music whenever I can. 
-						My favorite artist is Edward Hopper for his <a class="styled-link color-tangerine" href="https://www.artic.edu/articles/808/nighthawks-as-a-symbol-of-hope">Nighthawks (1942)</a>, among others.
-						I recommend the timeless musical <a class="styled-link color-tangerine" href="https://www.youtube.com/watch?v=_BpsTZ4UZk8">Les Misérables</a> to everyone. 
-						I dance Argentine Tango and have a love for <a class="styled-link color-tangerine" href="https://www.youtube.com/playlist?list=PLMvB-1EVBfr8_QN_lkhibeZeM8pntIaQY">Golden Age Tango music</a>. 
-						Besides my hometown of Jinan, I have also called Ann Arbor, Beijing, Berkeley, Shenzhen and Hong Kong home.
+		<section id="personal">
+			<grid-wrapper>
+				<grid-cell>
+					<div class="personal-bio">
+						<h2>Personal Side</h2>
+						<p>
+							Outside of work, I enjoy art and music whenever I can. My favorite artist is Edward Hopper for his <a class="styled-link color-tangerine" href="https://www.artic.edu/articles/808/nighthawks-as-a-symbol-of-hope">Nighthawks (1942)</a>, among others. I recommend the timeless musical <a class="styled-link color-tangerine" href="https://www.youtube.com/watch?v=_BpsTZ4UZk8">Les Misérables</a> to everyone. I dance Argentine Tango and have a love for <a class="styled-link color-tangerine" href="https://www.youtube.com/playlist?list=PLMvB-1EVBfr8_QN_lkhibeZeM8pntIaQY">Golden Age Tango music</a>.
+						</p>
+						<p>
+							I share my days with Xinning, who runs a bakery with quiet passion and creativity. She holds a Master of Arts in cultural management and brings that sensibility into her brand and craft. She still bakes on her own - every bread carries her care, her rhythm, and a touch of art.
+						</p>
+						<p>
+							Besides my hometown of Jinan, I have also called Ann Arbor, Beijing, Berkeley, Shenzhen and Hong Kong home.
+						</p>
 					</div>
-				</div>
-			</section>
-		</div>
-		<footer>
-			<div class="container">
-				<div><a href="/cn.html" target="_blank">中文页面</a></div>
-				<div><a href="https://www.linkedin.com/in/andyxukq/" target="_blank">LinkedIn</a></div>
-				<div><a href="mailto:kqxu@acm.org" target="_blank">Email</a></div>
-				<div><span class="wechat">WeChat</span></div>
-			</div>
-		</footer>
-		<script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c824b24ae475452199acb8376a2a0b53"}'></script>
-		<script src="scripts/author-links.js"></script>
-	</body>
+				</grid-cell>
+				<grid-cell>
+					<div class="personal-text">
+						<div>
+							See you there
+                        </div>
+						<div class="personal-links">
+							<a href="https://www.linkedin.com/in/andyxukq/" class="personal-link-icon icon-linkedin">
+								<img src="assets/icon-linkedin.svg" alt="LinkedIn" />
+							</a>
+							<a href="mailto:kqxu@acm.org" class="personal-link-icon icon-email">
+								<img src="assets/icon-email.svg" alt="Email" />
+							</a>
+						</div>
+					</div>
+				</grid-cell>
+			</grid-wrapper>
+		</section>
+	</div>
+	<canvas class="bgCanvas" id="topologyCanvas"></canvas>
+	<script async src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c824b24ae475452199acb8376a2a0b53"}'></script>
+</body>
 </html>
