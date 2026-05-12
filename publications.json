@@ -1,5 +1,12 @@
 [
 	{
+		"venue": "SIGCOMM '26",
+		"venueFull": "ACM Special Interest Group on Data Communication (SIGCOMM) Conference",
+		"title": "TurboBus: Pooling PCIe Bandwidth for LLM Workloads via Scale-Up Fabrics",
+		"authors": "Xinyu Yang, Kaiqiang Xu, Kai Chen",
+		"pdf": "#"
+	},
+	{
 		"venue": "ICLR '26",
 		"venueFull": "International Conference on Learning Representations",
 		"title": "Unlocking Full Efficiency of Token Filtering in Large Language Model Training",
