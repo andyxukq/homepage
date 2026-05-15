@@ -46,7 +46,7 @@ function runTopologySketch() {
 			const seed = p.random([189, 2876, 1811, 3206, 846, 3906, 8933, 3381, 7279]);
 			p.noiseSeed(seed);
 			p.createCanvas(width, height, canvas);
-			p.background('#fbf7f0');
+			p.background('#faf9f5');
 			p.smooth();
 			p.noStroke();
 			p.frameRate(60);

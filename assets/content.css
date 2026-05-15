@@ -39,7 +39,7 @@
 	left: 0;
 	right: 0;
 	height: 4rem;
-	background: linear-gradient(to bottom, rgba(251, 247, 240, 0) 0%, rgba(251, 247, 240, 1) 100%);
+	background: linear-gradient(to bottom, rgba(250, 249, 245, 0) 0%, rgba(250, 249, 245, 1) 100%);
 	pointer-events: none;
 	z-index: 10;
 	opacity: 0;
@@ -67,13 +67,14 @@
 }
 
 .publication-entry .title a {
-	color: #333;
+	color: var(--ink);
 	text-decoration: none;
     border-bottom: none;
 }
 
 .publication-entry .title a:hover {
 	text-decoration: underline;
+	color: var(--accent);
 }
 
 .publication-entry .venue {
@@ -81,25 +82,25 @@
 }
 
 .publication-entry .authors {
-	color: #555;
+	color: var(--ink-soft);
 	margin-bottom: 0.25rem;
 }
 	
 .publication-entry .authors .author-self {
 	font-weight: 700;
-	border-bottom: 1px dotted #333;
+	border-bottom: 1px dotted var(--ink);
 }
 
 .publication-entry .venue-full {
 	display: inline;
-	color: #666;
+	color: var(--ink-mute);
 	font-weight: 400;
 }
 
 .publications-links {
     margin-top: -0.5rem;
 	font-size: 0.8rem;
-	color: #333;
+	color: var(--ink);
     z-index: 999;
     position: relative;
     display: flex;
@@ -107,11 +108,11 @@
 }
 
 .publications-links a {
-    border-bottom: 1px dotted #333;
+    border-bottom: 1px dotted var(--ink);
 }
 .publications-links a:hover {
     text-decoration: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid var(--ink);
 }
 
 .publications-page #publications {
@@ -165,7 +166,7 @@
 }
 
 .company-info .position {
-	color: #666;
+	color: var(--ink-mute);
 }
 
 .company-container .company-logo {
@@ -220,7 +221,7 @@
 
 .photos .photo span {
 	font-size: 0.75rem;
-	border-bottom: 1px dotted #333;
+	border-bottom: 1px dotted var(--ink);
 	display: inline !important;
 }
 
@@ -236,6 +237,7 @@
 }
 
 .personal-text {
+    position: relative;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -243,6 +245,43 @@
     justify-content: center;
     padding: 2rem;
 	font-style: italic;
+    overflow: hidden;
+}
+
+.personal-illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.45;
+    z-index: 0;
+}
+
+.personal-text > *:not(.personal-illustration) {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 768px) {
+    #personal .grid-content,
+    #personal .grid-instance,
+    .personal-text {
+        overflow: visible;
+    }
+    .personal-illustration {
+        position: static;
+        display: block;
+        width: 100vw;
+        max-width: none;
+        margin-left: calc(50% - 50vw);
+        margin-right: calc(50% - 50vw);
+        margin-top: 1.5rem;
+        margin-bottom: -2rem;
+    }
 }
 
 .personal-links {
@@ -266,7 +305,7 @@
 }
 
 .personal-link-icon {
-	color: #666;
+	color: var(--ink-mute);
 	display: inline-flex;
 }
 
@@ -297,11 +336,11 @@
 	white-space: nowrap;
 	font-style: normal;
 	font-size: 0.85rem;
-	color: #333;
-	background: #fff;
-	border: 1px solid #ddd;
+	color: var(--ink);
+	background: var(--bg-card);
+	border: 1px solid var(--line-strong);
 	border-radius: 6px;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 2px 8px rgba(20, 20, 19, 0.1);
 	opacity: 0;
 	visibility: hidden;
 	transition: opacity 0.2s ease, visibility 0.2s ease, transform 0.2s ease;
@@ -315,7 +354,7 @@
 	left: 50%;
 	margin-left: -4px;
 	border: 4px solid transparent;
-	border-top-color: #ddd;
+	border-top-color: var(--line-strong);
 }
 
 .wechat-contact.open .wechat-slide-text {
@@ -337,5 +376,5 @@
   width: 100%;
   pointer-events: none;
   z-index: -1;
-  mask-image: linear-gradient(180deg, #fbf7f000 0%, #fbf7f0 60%, #fbf7f0 100%);
+  mask-image: linear-gradient(180deg, #faf9f500 0%, #faf9f5 60%, #faf9f5 100%);
 }
