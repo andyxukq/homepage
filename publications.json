@@ -1,10 +1,26 @@
 [
 	{
+		"venue": "SoCC '26",
+		"venueFull": "ACM Symposium on Cloud Computing",
+		"title": "FCP: Fast User-space RDMA Control Plane Setup for Elastic Computing",
+		"authors": "Junxue Zhang, Han Tian, Xinyang Huang, Wenxue Li, Kaiqiang Xu, Dian Shen, Kai Chen",
+		"pdf": "#",
+		"homepage": false
+	},
+	{
+		"venue": "ICNP '26",
+		"venueFull": "IEEE International Conference on Network Protocols",
+		"title": "ARIES: Cost-Efficient Tunnel Gateway Offload on Programmable Switches",
+		"authors": "Decang Sun, Gonglong Chen, Chaoliang Zeng, Kaiqiang Xu, Han Tian, Zili Meng, Wei Chen, Yuxi Wang, Kai Chen",
+		"pdf": "#",
+		"homepage": false
+	},
+	{
 		"venue": "SIGCOMM '26",
 		"venueFull": "ACM Special Interest Group on Data Communication (SIGCOMM) Conference",
 		"title": "TurboBus: Pooling PCIe Bandwidth for LLM Workloads via Scale-Up Fabrics",
 		"authors": "Xinyu Yang, Kaiqiang Xu, Kai Chen",
-		"pdf": "#"
+		"pdf": "/papers/sigcomm26-turbobus.pdf"
 	},
 	{
 		"venue": "ICLR '26",

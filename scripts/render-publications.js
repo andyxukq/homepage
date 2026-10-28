@@ -129,7 +129,8 @@ async function loadPublications() {
 		if (!response.ok) {
 			throw new Error('Failed to load publications');
 		}
-		allPublications = await response.json();
+		// Entries marked "homepage": false appear only on the publications page
+		allPublications = (await response.json()).filter(pub => pub.homepage !== false);
 		
 		// Render all publications once
 		renderAllPublications();
