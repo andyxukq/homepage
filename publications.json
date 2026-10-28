@@ -4,7 +4,7 @@
 		"venueFull": "ACM Symposium on Cloud Computing",
 		"title": "FCP: Fast User-space RDMA Control Plane Setup for Elastic Computing",
 		"authors": "Junxue Zhang, Han Tian, Xinyang Huang, Wenxue Li, Kaiqiang Xu, Dian Shen, Kai Chen",
-		"pdf": "#",
+		"pdf": "https://snowzjx.me/assets/fcp-socc26.pdf",
 		"homepage": false
 	},
 	{
