@@ -13,7 +13,8 @@ const authorLinks = {
 	'Fan Lai': 'https://www.fanlai.me/',
 	'Xinchen Wan': 'https://xcwanandy.github.io/',
 	'Xudong Liao': 'https://xudongliao.github.io/',
-	'Hao Wang': 'https://whwh1996.github.io/'
+	'Hao Wang': 'https://whwh1996.github.io/',
+	'Wenxue Li': 'https://leewxgit.github.io/index.html'
 };
 
 async function renderPublicationsPage() {
